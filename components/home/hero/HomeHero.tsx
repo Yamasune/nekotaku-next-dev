@@ -40,7 +40,7 @@ export const HomeHero = () => {
                 <RandomGalgameButton color="primary" variant="solid">
                   随机一部游戏
                 </RandomGalgameButton>
-                <Tooltip content="Discord 服务器">
+                <Tooltip showArrow content="Discord 服务器">
                   <Button
                     isIconOnly
                     isExternal
