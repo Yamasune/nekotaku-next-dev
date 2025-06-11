@@ -3,12 +3,11 @@
 import { useEffect, useState } from 'react'
 import { kunFetchGet } from '~/utils/kunFetch'
 import { CommentCard } from './CommentCard'
-import { KunMasonryGrid } from '~/components/kun/MasonryGrid'
 import { FilterBar } from './FilterBar'
 import { useMounted } from '~/hooks/useMounted'
 import { KunLoading } from '~/components/kun/Loading'
 import { KunHeader } from '../kun/Header'
-import { useRouter, useSearchParams } from 'next/navigation'
+import { useSearchParams } from 'next/navigation'
 import { KunPagination } from '~/components/kun/Pagination'
 import type { SortDirection, SortOption } from './_sort'
 import type { PatchComment } from '~/types/api/comment'
@@ -25,7 +24,6 @@ export const CardContainer = ({ initialComments, initialTotal }: Props) => {
   const [sortField, setSortField] = useState<SortOption>('created')
   const [sortOrder, setSortOrder] = useState<SortDirection>('desc')
   const isMounted = useMounted()
-  const router = useRouter()
   const searchParams = useSearchParams()
   const [page, setPage] = useState(Number(searchParams.get('page')) || 1)
 
@@ -54,13 +52,6 @@ export const CardContainer = ({ initialComments, initialTotal }: Props) => {
     fetchData()
   }, [sortField, sortOrder, page])
 
-  const handlePageChange = (newPage: number) => {
-    setPage(newPage)
-    const params = new URLSearchParams(window.location.search)
-    params.set('page', newPage.toString())
-    router.push(`?${params.toString()}`)
-  }
-
   return (
     <div className="container mx-auto my-4 space-y-6">
       <KunHeader
@@ -78,11 +69,11 @@ export const CardContainer = ({ initialComments, initialTotal }: Props) => {
       {loading ? (
         <KunLoading hint="正在获取评论数据..." />
       ) : (
-        <KunMasonryGrid columnWidth={256} gap={24}>
+        <div className="space-y-4">
           {comments.map((comment) => (
             <CommentCard key={comment.id} comment={comment} />
           ))}
-        </KunMasonryGrid>
+        </div>
       )}
 
       {total > 50 && (
