@@ -2,7 +2,7 @@
 
 import axios from 'axios'
 import toast from 'react-hot-toast'
-import { useState } from 'react'
+import { Dispatch, SetStateAction, useState } from 'react'
 import { FileDropZone } from './FileDropZone'
 import { FileUploadCard } from './FileUploadCard'
 import { KunCaptchaModal } from '~/components/kun/auth/CaptchaModal'
@@ -19,9 +19,14 @@ interface Props {
     size: string
   ) => void
   handleRemoveFile: () => void
+  setUploadingResource: Dispatch<SetStateAction<boolean>>
 }
 
-export const FileUploadContainer = ({ onSuccess, handleRemoveFile }: Props) => {
+export const FileUploadContainer = ({
+  onSuccess,
+  handleRemoveFile,
+  setUploadingResource
+}: Props) => {
   const { isOpen, onOpen, onClose } = useDisclosure()
   const currentUserRole = useUserStore((state) => state.user.role)
   const [fileData, setFileData] = useState<FileStatus | null>(null)
@@ -38,6 +43,8 @@ export const FileUploadContainer = ({ onSuccess, handleRemoveFile }: Props) => {
       toast.error('未找到资源文件, 请重试')
       return
     }
+
+    setUploadingResource(true)
 
     const formData = new FormData()
     formData.append('file', fileForUpload)
@@ -71,6 +78,8 @@ export const FileUploadContainer = ({ onSuccess, handleRemoveFile }: Props) => {
       `${process.env.NEXT_PUBLIC_KUN_VISUAL_NOVEL_S3_STORAGE_URL}/${fileHash}`,
       fileSize
     )
+
+    setUploadingResource(false)
   }
 
   const handleFileUpload = async (file: File) => {
