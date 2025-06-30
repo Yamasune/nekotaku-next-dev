@@ -22,7 +22,7 @@ const KUN_SITE_LIST = [
   { name: KUN_SITE_NAME, url: 'https://www.touchgal.org' },
   { name: KUN_SITE_NAME, url: 'https://www.touchgal.me' },
   { name: KUN_SITE_NAME, url: 'https://www.touchgal.co' },
-  { name: KUN_SITE_NAME, url: 'https://www.touchgal.us' }
+  { name: KUN_SITE_NAME, url: 'https://www.touchgal.io' }
 ]
 const KUN_SITE_KEYWORDS = [
   'TouchGAL',
