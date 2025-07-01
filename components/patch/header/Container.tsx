@@ -10,9 +10,10 @@ import type { Patch, PatchIntroduction } from '~/types/api/patch'
 interface PatchHeaderProps {
   patch: Patch
   intro: PatchIntroduction
+  uid?: number
 }
 
-export const PatchHeaderContainer = ({ patch, intro }: PatchHeaderProps) => {
+export const PatchHeaderContainer = ({ patch, intro, uid }: PatchHeaderProps) => {
   const { setData } = useRewritePatchStore()
   const [selected, setSelected] = useState('introduction')
 
@@ -42,6 +43,7 @@ export const PatchHeaderContainer = ({ patch, intro }: PatchHeaderProps) => {
       <PatchHeaderTabs
         id={patch.id}
         intro={intro}
+        uid={uid}
         selected={selected}
         setSelected={setSelected}
       />
