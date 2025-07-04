@@ -21,9 +21,10 @@ import type { PatchResource } from '~/types/api/patch'
 
 interface Props {
   id: number
+  vndbId: string
 }
 
-export const Resources = ({ id }: Props) => {
+export const Resources = ({ id, vndbId }: Props) => {
   const [loading, setLoading] = useState(false)
   const [resources, setResources] = useState<PatchResource[]>([])
   useEffect(() => {
@@ -91,6 +92,7 @@ export const Resources = ({ id }: Props) => {
         <KunLoading hint="正在获取 Galgame 资源数据..." />
       ) : (
         <ResourceTabs
+          vndbId={vndbId}
           resources={resources}
           setEditResource={setEditResource}
           onOpenEdit={onOpenEdit}
