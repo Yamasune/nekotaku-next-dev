@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useState, useTransition } from 'react'
-import { Card, CardBody, Link, Image } from '@nextui-org/react'
+import { Alert, Card, CardBody, Link, Image } from '@nextui-org/react'
 import { KunResourceInfo } from './KunResourceInfo'
 import { KunResourceDownload } from './KunResourceDownload'
 import { KunLoading } from '~/components/kun/Loading'
@@ -60,6 +60,16 @@ export const KunPatchTab = ({ vndbId }: Props) => {
                 </Card>
               ))}
 
+              <Alert
+                color="warning"
+                variant="faded"
+                title="使用补丁前请认真阅读补丁资源的备注（如果有）, 以免产生问题"
+                classNames={{
+                  base: 'shadow-medium',
+                  title: 'font-bold'
+                }}
+              />
+
               <div className="flex flex-wrap justify-center text-default-500">
                 <span>补丁数据由</span>
                 <Link
@@ -76,10 +86,7 @@ export const KunPatchTab = ({ vndbId }: Props) => {
                   />
                   鲲 Galgame 补丁
                 </Link>
-                <span>
-                  提供, 目前 AI 翻译补丁居多, 如果有任何问题,
-                  请在链接中对应的页面联系原作者修正
-                </span>
+                <span>提供</span>
               </div>
             </>
           ) : (
