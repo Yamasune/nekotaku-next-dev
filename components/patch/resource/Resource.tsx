@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import {
+  Alert,
   Button,
   Modal,
   ModalBody,
@@ -91,14 +92,26 @@ export const Resources = ({ id, vndbId }: Props) => {
       {loading ? (
         <KunLoading hint="正在获取 Galgame 资源数据..." />
       ) : (
-        <ResourceTabs
-          vndbId={vndbId}
-          resources={resources}
-          setEditResource={setEditResource}
-          onOpenEdit={onOpenEdit}
-          onOpenDelete={onOpenDelete}
-          setDeleteResourceId={setDeleteResourceId}
-        />
+        <>
+          <ResourceTabs
+            vndbId={vndbId}
+            resources={resources}
+            setEditResource={setEditResource}
+            onOpenEdit={onOpenEdit}
+            onOpenDelete={onOpenDelete}
+            setDeleteResourceId={setDeleteResourceId}
+          />
+
+          <Alert
+            color="warning"
+            variant="faded"
+            title="使用资源前请认真阅读资源的备注（如果有）, 以免产生问题"
+            classNames={{
+              base: 'shadow-medium',
+              title: 'font-bold'
+            }}
+          />
+        </>
       )}
 
       <Modal

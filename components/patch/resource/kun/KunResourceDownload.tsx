@@ -2,19 +2,19 @@
 
 import DOMPurify from 'isomorphic-dompurify'
 import { useState, useEffect, useRef, useLayoutEffect } from 'react'
-import { Accordion, AccordionItem, Button } from '@nextui-org/react'
-import { KunUser } from '~/components/kun/floating-card/KunUser'
+import { User, Button } from '@nextui-org/react'
 import { Download, ChevronDown, ChevronUp } from 'lucide-react'
 import { formatDistanceToNow } from '~/utils/formatDistanceToNow'
 import { KunResourceDownloadCard } from './KunDownloadCard'
 import { markdownToHtml } from './markdownToHtml'
-import { formatDate } from '~/utils/time'
+import Link from 'next/link'
 import type { KunPatchResourceResponse } from '~/types/api/kun/moyu-moe'
 
 interface Props {
   resource: KunPatchResourceResponse
 }
 
+const KUN_PATCH_WEBSITE_ENDPOINT = `https://www.moyu.moe`
 const COLLAPSED_HEIGHT_PX = 96
 
 export const KunResourceDownload = ({ resource }: Props) => {
@@ -65,7 +65,7 @@ export const KunResourceDownload = ({ resource }: Props) => {
             <h3 className="font-medium">
               {resource.name ? resource.name : '资源备注'}
             </h3>
-            <p className="text-sm text-gray-500 dark:text-gray-400">
+            <p className="text-sm text-default-5000">
               该补丁资源最后更新于 {formatDistanceToNow(resource.update_time)}
             </p>
           </div>
@@ -86,7 +86,7 @@ export const KunResourceDownload = ({ resource }: Props) => {
             </div>
 
             {isNoteOverflowing && !isNoteExpanded && (
-              <div className="absolute bottom-0 left-0 w-full h-12 bg-gradient-to-t from-white to-transparent dark:from-gray-900" />
+              <div className="absolute bottom-0 left-0 w-full h-12 bg-gradient-to-t from-content1 to-transparent" />
             )}
           </div>
 
@@ -114,18 +114,20 @@ export const KunResourceDownload = ({ resource }: Props) => {
       )}
 
       <div className="flex justify-between">
-        <KunUser
-          user={resource.user}
-          userProps={{
-            name: resource.user.name,
-            description: `发布于 ${formatDate(resource.created, { isPrecise: true, isShowYear: true })}`,
-            avatarProps: {
+        <Link
+          target="_blank"
+          href={`${KUN_PATCH_WEBSITE_ENDPOINT}/user/${resource.user.id}/resource`}
+        >
+          <User
+            name={resource.user.name}
+            description={resource.user.name}
+            avatarProps={{
               showFallback: true,
               src: resource.user.avatar,
               name: resource.user.name.charAt(0).toUpperCase()
-            }
-          }}
-        />
+            }}
+          />
+        </Link>
 
         <div className="flex gap-2">
           <Button

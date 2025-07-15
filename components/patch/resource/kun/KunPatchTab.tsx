@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useState, useTransition } from 'react'
-import { Alert, Card, CardBody, Link, Image } from '@nextui-org/react'
+import { Card, CardBody, Link, Image } from '@nextui-org/react'
 import { KunResourceInfo } from './KunResourceInfo'
 import { KunResourceDownload } from './KunResourceDownload'
 import { KunLoading } from '~/components/kun/Loading'
@@ -59,16 +59,6 @@ export const KunPatchTab = ({ vndbId }: Props) => {
                   </CardBody>
                 </Card>
               ))}
-
-              <Alert
-                color="warning"
-                variant="faded"
-                title="使用补丁前请认真阅读补丁资源的备注（如果有）, 以免产生问题"
-                classNames={{
-                  base: 'shadow-medium',
-                  title: 'font-bold'
-                }}
-              />
 
               <div className="flex flex-wrap justify-center text-default-500">
                 <span>补丁数据由</span>
