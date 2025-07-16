@@ -55,7 +55,7 @@ export const ResourceDownload = ({ resource }: Props) => {
 
   return (
     <div className="space-y-2">
-      {resource.note && (
+      {resource.note ? (
         <div className="w-full">
           <div className="flex flex-col">
             <h3 className="font-medium">
@@ -107,6 +107,8 @@ export const ResourceDownload = ({ resource }: Props) => {
             </Button>
           )}
         </div>
+      ) : (
+        <p>{resource.name}</p>
       )}
 
       <div className="flex justify-between">
