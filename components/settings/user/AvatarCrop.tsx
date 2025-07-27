@@ -130,7 +130,12 @@ export const AvatarCrop = () => {
           <ModalHeader>裁剪头像</ModalHeader>
           <ModalBody className="flex items-center justify-center">
             {image && (
-              <ReactCrop crop={crop} onChange={(c) => setCrop(c)} aspect={1}>
+              <ReactCrop
+                keepSelection={true}
+                crop={crop}
+                onChange={(c) => setCrop(c)}
+                aspect={1}
+              >
                 <img
                   ref={imageRef}
                   src={image}
