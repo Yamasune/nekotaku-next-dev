@@ -1,9 +1,9 @@
 'use client'
 
-import { Tooltip } from "@heroui/tooltip"
-import { Button } from "@heroui/button"
+import { Tooltip } from '@heroui/tooltip'
+import { Button } from '@heroui/button'
 import { Search } from 'lucide-react'
-import { useRouter } from 'next-nprogress-bar'
+import { useRouter } from '@bprogress/next'
 import { useHotkeys } from 'react-hotkeys-hook'
 
 export const KunSearch = () => {

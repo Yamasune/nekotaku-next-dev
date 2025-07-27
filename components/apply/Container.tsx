@@ -11,12 +11,12 @@ import {
   Chip,
   Divider,
   Progress
-} from "@heroui/react"
+} from '@heroui/react'
 import { BadgeCheck, CheckCircle2, CircleSlash, Trophy } from 'lucide-react'
-import { useRouter } from 'next-nprogress-bar'
+import { useRouter } from '@bprogress/next'
 import { kunFetchPost } from '~/utils/kunFetch'
 import { kunErrorHandler } from '~/utils/kunErrorHandler'
-import { Link } from "@heroui/react"
+import { Link } from '@heroui/react'
 import toast from 'react-hot-toast'
 
 interface Props {

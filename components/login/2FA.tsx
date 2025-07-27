@@ -1,8 +1,8 @@
 'use client'
 
 import { useState, useEffect, useTransition } from 'react'
-import { useRouter } from 'next-nprogress-bar'
-import { Input, Button, Link } from "@heroui/react"
+import { useRouter } from '@bprogress/next'
+import { Input, Button, Link } from '@heroui/react'
 import toast from 'react-hot-toast'
 import { useUserStore } from '~/store/userStore'
 import { kunFetchGet, kunFetchPost } from '~/utils/kunFetch'
