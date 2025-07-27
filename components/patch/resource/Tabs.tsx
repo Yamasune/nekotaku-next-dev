@@ -9,16 +9,16 @@ import {
   DropdownItem,
   DropdownMenu,
   DropdownTrigger,
-  Tabs,
-  Tab
-} from "@heroui/react"
+  Tab,
+  Tabs
+} from '@heroui/react'
 import { Edit, MoreHorizontal, Trash2 } from 'lucide-react'
 import { useUserStore } from '~/store/userStore'
 import { ResourceInfo } from './ResourceInfo'
 import { ResourceDownload } from './ResourceDownload'
 import {
-  SUPPORTED_RESOURCE_SECTION,
-  RESOURCE_SECTION_MAP
+  RESOURCE_SECTION_MAP,
+  SUPPORTED_RESOURCE_SECTION
 } from '~/constants/resource'
 import { KunPatchTab } from './kun/KunPatchTab'
 import { KunNull } from '~/components/kun/Null'

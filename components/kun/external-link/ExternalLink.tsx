@@ -1,9 +1,9 @@
 'use client'
 
-import { Link } from "@heroui/link"
+import { Link } from '@heroui/link'
 import { useUserStore } from '~/store/userStore'
 import type { ReactNode } from 'react'
-import type { LinkProps } from "@heroui/react"
+import type { LinkProps } from '@heroui/react'
 
 interface Props extends LinkProps {
   link: string

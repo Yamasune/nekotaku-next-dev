@@ -1,7 +1,7 @@
 'use client'
 
-import { Chip } from "@heroui/react"
-import { Image } from "@heroui/image"
+import { Chip } from '@heroui/react'
+import { Image } from '@heroui/image'
 import Link from 'next/link'
 import { formatDistanceToNow } from '~/utils/formatDistanceToNow'
 import { KunUser } from '~/components/kun/floating-card/KunUser'
@@ -22,7 +22,7 @@ export const RenderCell = (galgame: AdminGalgame, columnKey: string) => {
           }
           style={{ aspectRatio: '16/9' }}
         />
-      );
+      )
     case 'name':
       return (
         <Link

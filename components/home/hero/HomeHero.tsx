@@ -1,8 +1,8 @@
-import { Button } from "@heroui/button"
-import { Tooltip } from "@heroui/tooltip"
-import { Link } from "@heroui/link"
-import { Card, CardBody } from "@heroui/card"
-import { Chip } from "@heroui/chip"
+import { Button } from '@heroui/button'
+import { Tooltip } from '@heroui/tooltip'
+import { Link } from '@heroui/link'
+import { Card, CardBody } from '@heroui/card'
+import { Chip } from '@heroui/chip'
 import { Sparkles } from 'lucide-react'
 import { KunCarousel } from '../carousel/KunCarousel'
 import { getKunPosts } from '../carousel/mdx'

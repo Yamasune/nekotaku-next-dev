@@ -2,17 +2,17 @@
 
 import { useTransition } from 'react'
 import {
+  Button,
   Card,
   CardBody,
-  Button,
   Modal,
-  ModalHeader,
   ModalBody,
-  ModalFooter,
   ModalContent,
+  ModalFooter,
+  ModalHeader,
   useDisclosure
-} from "@heroui/react"
-import { Image } from "@heroui/image"
+} from '@heroui/react'
+import { Image } from '@heroui/image'
 import Link from 'next/link'
 import { KunCardStats } from '~/components/kun/CardStats'
 import { kunErrorHandler } from '~/utils/kunErrorHandler'
@@ -116,5 +116,5 @@ export const UserGalgameCard = ({
         </div>
       </CardBody>
     </Card>
-  );
+  )
 }

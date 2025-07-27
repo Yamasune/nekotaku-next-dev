@@ -1,9 +1,9 @@
 'use client'
 
 import { useEffect } from 'react'
-import { Input } from "@heroui/input"
-import { Button } from "@heroui/button"
-import { Chip } from "@heroui/chip"
+import { Input } from '@heroui/input'
+import { Button } from '@heroui/button'
+import { Chip } from '@heroui/chip'
 import { Plus, X } from 'lucide-react'
 import { ErrorType } from '../share'
 import { SUPPORTED_RESOURCE_LINK_MAP } from '~/constants/resource'

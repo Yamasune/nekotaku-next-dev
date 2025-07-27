@@ -1,6 +1,6 @@
 'use client'
 
-import { Snippet } from "@heroui/react"
+import { Snippet } from '@heroui/react'
 import { KunPatchAttribute } from '~/components/kun/PatchAttribute'
 import type { PatchResource } from '~/types/api/patch'
 

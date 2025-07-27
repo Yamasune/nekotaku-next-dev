@@ -1,8 +1,8 @@
 'use client'
 
-import { Chip } from "@heroui/chip"
-import { Link } from "@heroui/link"
-import { Cloud, Link as LinkIcon, Database } from 'lucide-react'
+import { Chip } from '@heroui/chip'
+import { Link } from '@heroui/link'
+import { Cloud, Database, Link as LinkIcon } from 'lucide-react'
 import { SUPPORTED_RESOURCE_LINK_MAP } from '~/constants/resource'
 import type { JSX } from 'react'
 import type { KunPatchResourceResponse } from '~/types/api/kun/moyu-moe'

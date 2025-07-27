@@ -8,7 +8,7 @@ import {
   PopoverContent,
   PopoverTrigger,
   Tooltip
-} from "@heroui/react"
+} from '@heroui/react'
 import { Video } from 'lucide-react'
 import { insertKunVideoCommand } from './videoPlugin'
 import type { CmdKey } from '@milkdown/core'

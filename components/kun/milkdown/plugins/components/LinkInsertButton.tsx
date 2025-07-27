@@ -8,7 +8,7 @@ import {
   PopoverContent,
   PopoverTrigger,
   Tooltip
-} from "@heroui/react"
+} from '@heroui/react'
 import { Link } from 'lucide-react'
 import { toggleLinkCommand } from '@milkdown/preset-commonmark'
 import type { CmdKey } from '@milkdown/core'

@@ -1,6 +1,6 @@
 import Link from 'next/link'
-import { Card, CardBody } from "@heroui/card"
-import { Image } from "@heroui/image"
+import { Card, CardBody } from '@heroui/card'
+import { Image } from '@heroui/image'
 import { KunCardStats } from '~/components/kun/CardStats'
 import { KunPatchAttribute } from '~/components/kun/PatchAttribute'
 
@@ -43,5 +43,5 @@ export const SearchCard = ({ patch }: Props) => {
         </div>
       </CardBody>
     </Card>
-  );
+  )
 }

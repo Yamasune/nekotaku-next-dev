@@ -10,7 +10,7 @@ import {
   ModalFooter,
   ModalHeader,
   useDisclosure
-} from "@heroui/react"
+} from '@heroui/react'
 import { Plus } from 'lucide-react'
 import { kunFetchDelete, kunFetchGet } from '~/utils/kunFetch'
 import { PublishResource } from './publish/PublishResource'

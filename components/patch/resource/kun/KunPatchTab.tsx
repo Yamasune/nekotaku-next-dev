@@ -1,14 +1,14 @@
 'use client'
 
 import { useEffect, useState, useTransition } from 'react'
-import { Card, CardBody, Link, Image } from "@heroui/react"
+import { Card, CardBody, Image, Link } from '@heroui/react'
 import { KunResourceInfo } from './KunResourceInfo'
 import { KunResourceDownload } from './KunResourceDownload'
 import { KunLoading } from '~/components/kun/Loading'
 import { KunNull } from '~/components/kun/Null'
 import type {
-  KunPatchResourceResponse,
-  HikariResponse
+  HikariResponse,
+  KunPatchResourceResponse
 } from '~/types/api/kun/moyu-moe'
 
 const KUN_PATCH_WEBSITE_ENDPOINT = `https://www.moyu.moe/api/hikari`

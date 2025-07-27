@@ -2,12 +2,12 @@
 
 import {
   Drawer,
+  DrawerBody,
   DrawerContent,
   DrawerHeader,
-  DrawerBody,
-  useDisclosure,
-  Link
-} from "@heroui/react"
+  Link,
+  useDisclosure
+} from '@heroui/react'
 import { usePathname } from 'next/navigation'
 import { ChevronRight } from 'lucide-react'
 import { SidebarContent } from './SidebarContent'

@@ -1,4 +1,4 @@
-import { Tab, Tabs } from "@heroui/tabs"
+import { Tab, Tabs } from '@heroui/tabs'
 import { IntroductionTab } from '~/components/patch/introduction/IntroductionTab'
 import { ResourceTab } from '~/components/patch/resource/ResourceTab'
 import { CommentTab } from '~/components/patch/comment/CommentTab'

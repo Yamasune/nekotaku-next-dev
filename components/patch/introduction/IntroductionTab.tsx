@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useRef } from 'react'
+import ReactDOM from 'react-dom/client'
 import { createRoot } from 'react-dom/client'
 import DOMPurify from 'isomorphic-dompurify'
 import { Card, CardBody } from '@heroui/card'
@@ -78,7 +79,6 @@ export const IntroductionTab = ({ intro, patchId, uid }: Props) => {
       root.className = element.className
       element.replaceWith(root)
 
-      const ReactDOM = require('react-dom/client')
       const linkRoot = ReactDOM.createRoot(root)
       linkRoot.render(<KunLink href={href} text={text} />)
     })

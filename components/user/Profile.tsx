@@ -1,9 +1,9 @@
 import { kunMoyuMoe } from '~/config/moyu-moe'
-import { Card, CardBody, CardHeader } from "@heroui/card"
-import { Avatar } from "@heroui/avatar"
-import { Chip } from "@heroui/chip"
-import { Divider } from "@heroui/divider"
-import { Progress } from "@heroui/progress"
+import { Card, CardBody, CardHeader } from '@heroui/card'
+import { Avatar } from '@heroui/avatar'
+import { Chip } from '@heroui/chip'
+import { Divider } from '@heroui/divider'
+import { Progress } from '@heroui/progress'
 import { formatDistanceToNow } from '~/utils/formatDistanceToNow'
 import { Calendar, Link as LinkIcon } from 'lucide-react'
 import { UserFollow } from './follow/Follow'

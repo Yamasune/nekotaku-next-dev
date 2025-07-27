@@ -1,4 +1,4 @@
-import { Input } from "@heroui/react"
+import { Input } from '@heroui/react'
 import { Search } from 'lucide-react'
 import { KunHeader } from '../kun/Header'
 

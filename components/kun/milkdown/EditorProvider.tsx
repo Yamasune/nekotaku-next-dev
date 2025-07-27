@@ -24,14 +24,14 @@ import {
   kunUploadWidgetFactory
 } from './plugins/components/uploader'
 import {
-  kunVideoRemarkDirective,
   insertKunVideoCommand,
+  kunVideoRemarkDirective,
   videoInputRule,
   videoNode
 } from './plugins/components/video/videoPlugin'
 import {
-  kunImageRemarkDirective,
   insertKunLinkCommand,
+  kunImageRemarkDirective,
   kunLinkInputRule,
   kunLinkNode
 } from './plugins/components/link/linkPlugin'
@@ -40,12 +40,12 @@ import {
   slash
 } from './plugins/components/mention/MentionsListDropdown'
 import {
-  stopLinkCommand,
-  linkCustomKeymap
+  linkCustomKeymap,
+  stopLinkCommand
 } from './plugins/components/stop-link/stopLinkPlugin'
 import {
-  placeholderPlugin,
-  placeholderCtx
+  placeholderCtx,
+  placeholderPlugin
 } from './plugins/components/placeholder/placeholderPlugin'
 import { KunLoading } from '../Loading'
 import '~/styles/editor.css'
