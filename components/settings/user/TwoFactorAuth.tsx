@@ -16,7 +16,7 @@ import {
   Switch,
   Chip,
   useDisclosure
-} from '@nextui-org/react'
+} from "@heroui/react"
 import { useUserStore } from '~/store/userStore'
 import { kunFetchGet, kunFetchPost } from '~/utils/kunFetch'
 import toast from 'react-hot-toast'

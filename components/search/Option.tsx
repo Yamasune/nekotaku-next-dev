@@ -6,7 +6,7 @@ import {
   PopoverTrigger,
   PopoverContent,
   Checkbox
-} from '@nextui-org/react'
+} from "@heroui/react"
 import { Settings } from 'lucide-react'
 import { useSearchStore } from '~/store/searchStore'
 

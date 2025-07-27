@@ -12,7 +12,7 @@ import {
   Checkbox,
   Textarea,
   useDisclosure
-} from '@nextui-org/react'
+} from "@heroui/react"
 import { Plus, Pencil } from 'lucide-react'
 import { kunFetchPost, kunFetchPut } from '~/utils/kunFetch'
 import toast from 'react-hot-toast'

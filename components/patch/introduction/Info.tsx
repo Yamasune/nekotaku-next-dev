@@ -1,6 +1,6 @@
 import { Calendar, Clock, Link, RefreshCw } from 'lucide-react'
 import { formatDate } from '~/utils/time'
-import { Link as LinkComp } from '@nextui-org/react'
+import { Link as LinkComp } from "@heroui/react"
 import type { PatchIntroduction } from '~/types/api/patch'
 
 interface Props {

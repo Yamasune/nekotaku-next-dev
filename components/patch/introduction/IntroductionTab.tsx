@@ -3,7 +3,7 @@
 import { useEffect, useRef } from 'react'
 import { createRoot } from 'react-dom/client'
 import DOMPurify from 'isomorphic-dompurify'
-import { Card, CardBody, CardHeader } from '@nextui-org/card'
+import { Card, CardBody, CardHeader } from "@heroui/card"
 import { Info } from './Info'
 import { PatchTag } from './Tag'
 import dynamic from 'next/dynamic'

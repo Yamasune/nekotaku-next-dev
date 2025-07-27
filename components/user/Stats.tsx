@@ -1,4 +1,4 @@
-import { Card, CardBody } from '@nextui-org/card'
+import { Card, CardBody } from "@heroui/card"
 import { MessageCircle, Puzzle, Star, MessageSquareMore } from 'lucide-react'
 import type { UserInfo } from '~/types/api/user'
 

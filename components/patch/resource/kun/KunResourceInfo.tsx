@@ -1,4 +1,4 @@
-import { Snippet } from '@nextui-org/snippet'
+import { Snippet } from "@heroui/snippet"
 import { KunPatchAttribute } from './KunPatchAttribute'
 import type { KunPatchResourceResponse } from '~/types/api/kun/moyu-moe'
 

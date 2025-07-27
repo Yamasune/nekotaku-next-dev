@@ -7,7 +7,7 @@ import {
   DropdownItem,
   Button,
   Switch
-} from '@nextui-org/react'
+} from "@heroui/react"
 import { Settings, Eye, EyeOff } from 'lucide-react'
 import { useSettingStore } from '~/store/settingStore'
 import { ThemeSwitcher } from './ThemeSwitcher'

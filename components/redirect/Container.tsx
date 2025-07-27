@@ -1,7 +1,7 @@
 'use client'
 
 import { Suspense } from 'react'
-import { Alert, Image, Link } from '@nextui-org/react'
+import { Alert, Image, Link } from "@heroui/react"
 import { KunRedirectCard } from './KunRedirectCard'
 
 export const KunRedirectContainer = () => {

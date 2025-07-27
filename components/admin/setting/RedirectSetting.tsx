@@ -1,6 +1,6 @@
 'use client'
 
-import { Switch, Input, Button, Card, CardBody, Chip } from '@nextui-org/react'
+import { Switch, Input, Button, Card, CardBody, Chip } from "@heroui/react"
 import { useState } from 'react'
 import { ExternalLink, Plus } from 'lucide-react'
 import { kunFetchPut } from '~/utils/kunFetch'

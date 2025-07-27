@@ -2,7 +2,7 @@
 
 import DOMPurify from 'isomorphic-dompurify'
 import { useEffect, useLayoutEffect, useRef, useState } from 'react'
-import { Button } from '@nextui-org/react'
+import { Button } from "@heroui/react"
 import { KunUser } from '~/components/kun/floating-card/KunUser'
 import { Download, ChevronDown, ChevronUp } from 'lucide-react'
 import { formatDistanceToNow } from '~/utils/formatDistanceToNow'

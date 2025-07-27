@@ -1,7 +1,7 @@
 'use client'
 
 import { useCallback, useState } from 'react'
-import { Tabs, Tab } from '@nextui-org/tabs'
+import { Tabs, Tab } from "@heroui/tabs"
 import { Code, Edit } from 'lucide-react'
 import { Codemirror } from './codemirror/Codemirror'
 import { useCreatePatchStore } from '~/store/editStore'

@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { Input, Button } from '@nextui-org/react'
+import { Input, Button } from "@heroui/react"
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 import { useRouter, useSearchParams } from 'next/navigation'
 import type { KeyboardEvent } from 'react'

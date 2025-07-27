@@ -1,6 +1,6 @@
 'use client'
 
-import { RadioGroup, Radio } from '@nextui-org/react'
+import { RadioGroup, Radio } from "@heroui/react"
 import { ErrorType } from '../share'
 import {
   SUPPORTED_RESOURCE_SECTION,

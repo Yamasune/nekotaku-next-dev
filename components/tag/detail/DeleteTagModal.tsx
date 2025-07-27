@@ -8,8 +8,8 @@ import {
   ModalFooter,
   ModalHeader,
   useDisclosure
-} from '@nextui-org/modal'
-import { Button } from '@nextui-org/button'
+} from "@heroui/modal"
+import { Button } from "@heroui/button"
 import { kunFetchDelete } from '~/utils/kunFetch'
 import { kunErrorHandler } from '~/utils/kunErrorHandler'
 import toast from 'react-hot-toast'

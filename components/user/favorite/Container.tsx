@@ -12,7 +12,7 @@ import {
   ModalFooter,
   ModalContent,
   useDisclosure
-} from '@nextui-org/react'
+} from "@heroui/react"
 import { Folder } from 'lucide-react'
 import { kunFetchDelete, kunFetchGet } from '~/utils/kunFetch'
 import { kunErrorHandler } from '~/utils/kunErrorHandler'

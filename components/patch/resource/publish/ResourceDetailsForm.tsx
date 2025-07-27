@@ -1,6 +1,6 @@
 import { Controller } from 'react-hook-form'
-import { Input, Textarea } from '@nextui-org/input'
-import { Select, SelectItem } from '@nextui-org/select'
+import { Input, Textarea } from "@heroui/input"
+import { Select, SelectItem } from "@heroui/select"
 import {
   resourceTypes,
   SUPPORTED_LANGUAGE,

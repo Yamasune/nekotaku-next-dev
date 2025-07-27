@@ -11,8 +11,8 @@ import {
   ModalFooter,
   ModalContent,
   useDisclosure
-} from '@nextui-org/react'
-import { Image } from '@nextui-org/image'
+} from "@heroui/react"
+import { Image } from "@heroui/image"
 import Link from 'next/link'
 import { KunCardStats } from '~/components/kun/CardStats'
 import { kunErrorHandler } from '~/utils/kunErrorHandler'
@@ -116,5 +116,5 @@ export const UserGalgameCard = ({
         </div>
       </CardBody>
     </Card>
-  )
+  );
 }

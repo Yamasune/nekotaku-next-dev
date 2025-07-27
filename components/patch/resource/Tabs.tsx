@@ -11,7 +11,7 @@ import {
   DropdownTrigger,
   Tabs,
   Tab
-} from '@nextui-org/react'
+} from "@heroui/react"
 import { Edit, MoreHorizontal, Trash2 } from 'lucide-react'
 import { useUserStore } from '~/store/userStore'
 import { ResourceInfo } from './ResourceInfo'

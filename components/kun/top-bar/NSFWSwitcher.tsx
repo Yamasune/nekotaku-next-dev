@@ -5,7 +5,7 @@ import {
   DropdownItem,
   DropdownMenu,
   DropdownTrigger
-} from '@nextui-org/react'
+} from "@heroui/react"
 import { useSettingStore } from '~/store/settingStore'
 import { Ban, ShieldCheck, CircleSlash } from 'lucide-react'
 import type { JSX } from 'react'

@@ -1,7 +1,7 @@
 'use client'
 
-import { Chip } from '@nextui-org/chip'
-import { Link } from '@nextui-org/link'
+import { Chip } from "@heroui/chip"
+import { Link } from "@heroui/link"
 import { Cloud, Link as LinkIcon, Database } from 'lucide-react'
 import { SUPPORTED_RESOURCE_LINK_MAP } from '~/constants/resource'
 import type { JSX } from 'react'

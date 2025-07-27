@@ -17,7 +17,7 @@ import {
   Alert,
   Spinner,
   Link
-} from '@nextui-org/react'
+} from "@heroui/react"
 import { useState } from 'react'
 import { Mail } from 'lucide-react'
 import { emailTemplates } from '~/constants/email/group-templates'

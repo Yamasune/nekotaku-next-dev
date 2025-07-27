@@ -1,7 +1,7 @@
 'use client'
 
-import { Button } from '@nextui-org/button'
-import { Tooltip } from '@nextui-org/tooltip'
+import { Button } from "@heroui/button"
+import { Tooltip } from "@heroui/tooltip"
 import { Bell, BellRing } from 'lucide-react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { useRouter } from 'next-nprogress-bar'

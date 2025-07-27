@@ -10,7 +10,7 @@ import {
   ModalHeader,
   useDisclosure,
   Textarea
-} from '@nextui-org/react'
+} from "@heroui/react"
 import { useState } from 'react'
 import toast from 'react-hot-toast'
 import { kunFetchPost } from '~/utils/kunFetch'

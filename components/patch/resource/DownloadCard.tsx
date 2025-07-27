@@ -1,7 +1,7 @@
 'use client'
 
-import { Snippet } from '@nextui-org/snippet'
-import { Chip } from '@nextui-org/chip'
+import { Snippet } from "@heroui/snippet"
+import { Chip } from "@heroui/chip"
 import { Cloud, Link as LinkIcon, Database } from 'lucide-react'
 import { Microsoft } from '~/components/kun/icons/Microsoft'
 import { SUPPORTED_RESOURCE_LINK_MAP } from '~/constants/resource'

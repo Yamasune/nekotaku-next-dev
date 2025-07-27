@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useState, useTransition } from 'react'
-import { Card, CardBody, Link, Image } from '@nextui-org/react'
+import { Card, CardBody, Link, Image } from "@heroui/react"
 import { KunResourceInfo } from './KunResourceInfo'
 import { KunResourceDownload } from './KunResourceDownload'
 import { KunLoading } from '~/components/kun/Loading'

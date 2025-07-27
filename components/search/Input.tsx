@@ -1,7 +1,7 @@
 'use client'
 
 import { useRef, useState, useEffect } from 'react'
-import { Button, Chip, Tooltip } from '@nextui-org/react'
+import { Button, Chip, Tooltip } from "@heroui/react"
 import { cn } from '~/utils/cn'
 import type { SearchSuggestionType } from '~/types/api/search'
 import type {
