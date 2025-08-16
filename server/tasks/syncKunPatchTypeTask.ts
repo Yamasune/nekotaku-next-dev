@@ -29,6 +29,11 @@ export const syncKunPatchTypeTask = cron.schedule('0 0 * * *', async () => {
         where: {
           vndb_id: {
             in: vndbIdsToAddPatch
+          },
+          NOT: {
+            type: {
+              has: 'patch'
+            }
           }
         },
         data: {

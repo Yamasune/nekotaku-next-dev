@@ -2,6 +2,7 @@ import { PrismaClient } from '@prisma/client'
 
 const prisma = new PrismaClient()
 
+// export const KUN_PATCH_WEBSITE_SYNC_PATCH_TYPE_ENDPOINT = `http://127.0.0.1:2333/api/moyu/patch/has-patch`
 export const KUN_PATCH_WEBSITE_SYNC_PATCH_TYPE_ENDPOINT = `https://www.moyu.moe/api/moyu/patch/has-patch`
 
 const syncKunPatchType = async () => {
@@ -25,6 +26,11 @@ const syncKunPatchType = async () => {
         where: {
           vndb_id: {
             in: vndbIdsToAddPatch
+          },
+          NOT: {
+            type: {
+              has: 'patch'
+            }
           }
         },
         data: {
