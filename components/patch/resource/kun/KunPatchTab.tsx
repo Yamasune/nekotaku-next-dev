@@ -6,12 +6,11 @@ import { KunResourceInfo } from './KunResourceInfo'
 import { KunResourceDownload } from './KunResourceDownload'
 import { KunLoading } from '~/components/kun/Loading'
 import { KunNull } from '~/components/kun/Null'
+import { KUN_PATCH_WEBSITE_GET_PATCH_LIST_ENDPOINT } from '~/config/external-api'
 import type {
   HikariResponse,
   KunPatchResourceResponse
 } from '~/types/api/kun/moyu-moe'
-
-const KUN_PATCH_WEBSITE_ENDPOINT = `https://www.moyu.moe/api/hikari`
 
 interface Props {
   vndbId: string
@@ -28,7 +27,9 @@ export const KunPatchTab = ({ vndbId }: Props) => {
     }
 
     startTransition(async () => {
-      const res = await fetch(`${KUN_PATCH_WEBSITE_ENDPOINT}?vndb_id=${vndbId}`)
+      const res = await fetch(
+        `${KUN_PATCH_WEBSITE_GET_PATCH_LIST_ENDPOINT}?vndb_id=${vndbId}`
+      )
       const response = (await res.json()) as HikariResponse
       if (response.success && response.data) {
         setResources(response.data.resource)
