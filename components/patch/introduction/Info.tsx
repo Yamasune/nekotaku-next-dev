@@ -20,7 +20,8 @@ export const Info = ({ intro }: Props) => {
         <div className="flex items-center gap-2 text-sm text-default-500">
           <RefreshCw className="size-4" />
           <span>
-            更新时间: {formatDate(intro.updated, { isShowYear: true })}
+            资源更新时间:{' '}
+            {formatDate(intro.resourceUpdateTime, { isShowYear: true })}
           </span>
         </div>
         {intro.released && (

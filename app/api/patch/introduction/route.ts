@@ -55,8 +55,9 @@ export const getPatchIntroduction = async (
     released: patch.released,
     alias: patch.alias.map((a) => a.name),
     tag: patch.tag.map((tag) => tag.tag),
-    created: String(patch.created),
-    updated: String(patch.updated)
+    created: patch.created,
+    updated: patch.updated,
+    resourceUpdateTime: patch.resource_update_time
   }
 
   await setKv(

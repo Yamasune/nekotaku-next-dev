@@ -37,8 +37,9 @@ export interface PatchIntroduction {
   released: string
   alias: string[]
   tag: Tag[]
-  created: string
-  updated: string
+  resourceUpdateTime: Date | string
+  created: Date | string
+  updated: Date | string
 }
 
 export interface PatchUpdate {
