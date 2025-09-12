@@ -27,10 +27,13 @@ export const KunPagination = ({
 
   useEffect(() => {
     if (!isLoading) {
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-      })
+      // Compatible FireFox Browser, because the render mechanism are difference
+      setTimeout(() => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        })
+      }, 0)
     }
   }, [isLoading])
 
