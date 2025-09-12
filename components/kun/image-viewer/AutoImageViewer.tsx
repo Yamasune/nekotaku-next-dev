@@ -83,7 +83,16 @@ export const KunAutoImageViewer = () => {
       animation={{ fade: 300 }}
       carousel={{
         finite: true,
-        preload: 2
+        preload: 2,
+        imageProps: {
+          style: {
+            maxWidth: 'none',
+            maxHeight: 'none',
+            width: '100%',
+            height: '100%',
+            objectFit: 'contain'
+          }
+        }
       }}
       zoom={{
         maxZoomPixelRatio: 3,
