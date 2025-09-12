@@ -10,9 +10,10 @@ import { cn } from '~/utils/cn'
 
 interface Props {
   patch: GalgameCard
+  openOnNewTab?: boolean
 }
 
-export const GalgameCard = ({ patch }: Props) => {
+export const GalgameCard = ({ patch, openOnNewTab = true }: Props) => {
   const [imageLoaded, setImageLoaded] = useState(false)
 
   return (
@@ -20,7 +21,7 @@ export const GalgameCard = ({ patch }: Props) => {
       isPressable
       as={Link}
       href={`/${patch.uniqueId}`}
-      target="_blank"
+      target={openOnNewTab ? '_blank' : '_self'}
       className="w-full border border-default-100 dark:border-default-200"
     >
       <CardHeader className="p-0">

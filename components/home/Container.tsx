@@ -31,7 +31,11 @@ export const HomeContainer = ({ galgames, resources }: Props) => {
         </div>
         <div className="grid grid-cols-2 gap-2 sm:gap-6 md:grid-cols-3 lg:grid-cols-4">
           {galgames.map((galgame) => (
-            <GalgameCard key={galgame.id} patch={galgame} />
+            <GalgameCard
+              key={galgame.id}
+              patch={galgame}
+              openOnNewTab={false}
+            />
           ))}
         </div>
       </section>
