@@ -5,7 +5,7 @@ const KUN_SITE_NAME = '喵源领域'
 const KUN_SITE_MENTION = '@nekotaku'
 const KUN_SITE_TITLE = '喵源领域 - 此刻便再无等待的理由'
 const KUN_SITE_IMAGE =
-  'https://image.nullcloud.top/wp-content/uploads/2025/03/favicon.png'
+  'https://image.nullcloud.top/uploads/favicon.webp'
 const KUN_SITE_DESCRIPTION =
   '喵源领域是专注于Galgame综合交流社区，提供最新最全的Galgame资讯和交流平台，助力将Galgame文化推向世界！'
 const KUN_SITE_URL = 'https://www.nyantaku.net/'

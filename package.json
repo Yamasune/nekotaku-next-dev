@@ -18,7 +18,7 @@
     "prisma:push": "pnpm prisma db push",
     "prisma:generate": "pnpm prisma generate",
     "start": "pm2 start ecosystem.config.cjs || true",
-    "stop": "pm2 delete kun-touchgal-next",
+    "stop": "pm2 delete nekotaku-next",
     "deploy:install": "esno scripts/deployInstall.ts",
     "deploy:build": "esno scripts/deployBuild.ts"
   },
