@@ -10,6 +10,7 @@ import { RandomGalgameButton } from '../carousel/RandomGalgameButton'
 import { Discord } from '~/components/kun/icons/Discord'
 import { KunHomeNavigationItems } from '../NavigationItems'
 import { kunMoyuMoe } from '~/config/moyu-moe'
+import { Telegram } from '~/components/kun/icons/Telegram'
 
 export const HomeHero = () => {
   const posts = getKunPosts()
@@ -23,16 +24,16 @@ export const HomeHero = () => {
               <div className="flex items-center gap-2">
                 <Sparkles className="w-5 h-5 text-primary-500" />
                 <Chip color="primary" variant="flat">
-                  欢迎来到 TouchGal
+                  恭喜你发现了宝藏
                 </Chip>
               </div>
 
               <div className="space-y-4">
                 <h1 className="py-1 text-3xl font-bold text-transparent xl:text-4xl bg-gradient-to-r from-primary-500 to-secondary-500 bg-clip-text">
-                  一站式 Galgame 文化社区！
+                  要不进来喝杯茶？
                 </h1>
                 <p className="text-md text-default-600">
-                  免费, 高质量的 Galgame 资源下载站
+                  专注于 Galgame 资源分享
                 </p>
               </div>
 
@@ -40,7 +41,7 @@ export const HomeHero = () => {
                 <RandomGalgameButton color="primary" variant="solid">
                   随机一部游戏
                 </RandomGalgameButton>
-                <Tooltip showArrow content="Discord 服务器">
+                <Tooltip showArrow content="Telegram事物公告">
                   <Button
                     isIconOnly
                     isExternal
@@ -49,7 +50,7 @@ export const HomeHero = () => {
                     variant="flat"
                     color="secondary"
                   >
-                    <Discord />
+                    <Telegram />
                   </Button>
                 </Tooltip>
               </div>

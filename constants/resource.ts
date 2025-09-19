@@ -1,39 +1,44 @@
 export const resourceTypes = [
   {
-    value: 'pc',
-    label: 'PC游戏',
-    description: '在 Windows, macOS 等电脑设备上运行的游戏'
+    value: 'windows',
+    label: 'Windows 资源',
+    description: '可以在 Windows 系统上直接运行的 Galgame 游戏'
+  },
+  {
+    value: 'krkr',
+    label: 'Kirikiroid2 资源',
+    description: '采用 Kirikiroid2 模拟器运行的 Galgame 资源'
+  },
+  {
+    value: 'ons',
+    label: 'ONScripter 资源',
+    description:
+      '可以在 ONScripter 模拟器运行的 Galgame 资源'
+  },
+  {
+    value: 'artemis',
+    label: 'Artemis 资源',
+    description: '可以在支持 Artemis 引擎的模拟器上运行的 Galgame 资源'
+  },
+  {
+    value: 'android',
+    label: 'Android 资源',
+    description: '可以在 Android 系统上直接安装运行的 Galgame 资源'
   },
   {
     value: 'row',
     label: '生肉资源',
-    description: '没有中文翻译, 仅有日语或其它语言的 Galgame'
+    description: '没有中文翻译, 仅有日语或其它语言的 Galgame 资源'
   },
   {
     value: 'chinese',
     label: '汉化资源',
-    description: '汉化 Galgame 下载资源, 有简体中文或繁体中文支持'
+    description: '无原生中文翻译的 Galgame 资源'
   },
   {
     value: 'patch',
     label: '补丁资源',
     description: '与这个 Galgame 相关的补丁资源'
-  },
-  {
-    value: 'mobile',
-    label: '手机游戏',
-    description: '可以在手机上运行的 Galgame 游戏'
-  },
-  {
-    value: 'emulator',
-    label: '模拟器资源',
-    description:
-      '可以在手机模拟器, 例如 KiriKiri, ONS, Tyranor 等模拟器中运行的 Galgame 游戏'
-  },
-  {
-    value: 'app',
-    label: '直装资源',
-    description: '可以直接在手机安装并游玩的 Galgame'
   },
   {
     value: 'tool',
@@ -53,12 +58,13 @@ export const resourceTypes = [
 ]
 
 export const SUPPORTED_TYPE = [
-  'pc',
-  'chinese',
-  'mobile',
-  'emulator',
+  'windows',
+  'krkr',
+  'ons',
+  'artemis',
+  'android',
   'row',
-  'app',
+  'chinese',
   'patch',
   'tool',
   'notice',
@@ -66,12 +72,13 @@ export const SUPPORTED_TYPE = [
 ]
 export const SUPPORTED_TYPE_MAP: Record<string, string> = {
   all: '全部类型',
-  pc: 'PC游戏',
-  chinese: '汉化资源',
-  mobile: '手机游戏',
-  emulator: '模拟器资源',
+  windows: 'Windows 资源',
+  krkr: 'Kirikiroid2 资源',
+  ons: 'ONScripter 资源',
+  artemis: 'Artemis 资源',
+  android: 'Android 资源',
   row: '生肉资源',
-  app: '直装资源',
+  chinese: '汉化资源',
   patch: '补丁资源',
   tool: '游戏工具',
   notice: '官方通知',
@@ -109,30 +116,18 @@ export const SUPPORTED_PLATFORM_MAP: Record<string, string> = {
   other: '其它'
 }
 
-export const SUPPORTED_RESOURCE_LINK = ['touchgal', 's3', 'user']
+export const SUPPORTED_RESOURCE_LINK = ['link']
 
 export const storageTypes = [
   {
-    value: 'touchgal',
-    label: 'TouchGal 资源盘 (官方可用)',
-    description: '此选项用于官方发布 Galgame 下载资源'
-  },
-  {
-    value: 's3',
-    label: '对象存储 (<100MB, 创作者可用)',
-    description: '此选项适合 <100MB 的补丁, 稳定, 永远不会失效过期'
-  },
-  {
-    value: 'user',
+    value: 'link',
     label: '自定义链接 (>100MB)',
     description: '此选项适合 >100MB 的补丁, 这需要您自行提供下载链接'
   }
 ]
 
 export const SUPPORTED_RESOURCE_LINK_MAP: Record<string, string> = {
-  touchgal: 'TouchGal 资源盘',
-  s3: '对象存储下载',
-  user: '自定义链接下载'
+  link: '自定义链接下载'
 }
 
 export const ALLOWED_MIME_TYPES = [

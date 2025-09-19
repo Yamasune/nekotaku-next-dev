@@ -1,6 +1,6 @@
 import Redis from 'ioredis'
 
-const KUN_PATCH_REDIS_PREFIX = 'kun:touchgal'
+const KUN_PATCH_REDIS_PREFIX = 'kun:nekotaku'
 
 export const redis = new Redis({
   port: parseInt(process.env.REDIS_PORT!),
