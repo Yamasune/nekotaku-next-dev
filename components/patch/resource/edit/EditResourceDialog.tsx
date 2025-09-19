@@ -101,7 +101,7 @@ export const EditResourceDialog = ({
             />
           )}
 
-          {(watch().storage === 'user' || watch().content) && (
+          {(watch().storage === 'link' || watch().content) && (
             <ResourceLinksInput
               errors={errors}
               storage={watch().storage}
