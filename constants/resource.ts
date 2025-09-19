@@ -26,6 +26,11 @@ export const resourceTypes = [
     description: '可以在 Android 系统上直接安装运行的 Galgame 资源'
   },
   {
+    value: 'apple',
+    label: 'Apple 资源',
+    description: '可以在 Apple 系统上运行的 Galgame 资源'
+  },
+  {
     value: 'row',
     label: '生肉资源',
     description: '没有中文翻译, 仅有日语或其它语言的 Galgame 资源'
@@ -63,6 +68,7 @@ export const SUPPORTED_TYPE = [
   'ons',
   'artemis',
   'android',
+  'apple',
   'row',
   'chinese',
   'patch',
@@ -77,6 +83,7 @@ export const SUPPORTED_TYPE_MAP: Record<string, string> = {
   ons: 'ONScripter 资源',
   artemis: 'Artemis 资源',
   android: 'Android 资源',
+  apple: 'Apple 资源',
   row: '生肉资源',
   chinese: '汉化资源',
   patch: '补丁资源',
@@ -111,7 +118,7 @@ export const SUPPORTED_PLATFORM_MAP: Record<string, string> = {
   windows: 'Windows',
   android: 'Android',
   macos: 'MacOS',
-  ios: 'iOS',
+  ios: 'iOS/iPadOS',
   linux: 'Linux',
   other: '其它'
 }
@@ -121,8 +128,8 @@ export const SUPPORTED_RESOURCE_LINK = ['link']
 export const storageTypes = [
   {
     value: 'link',
-    label: '自定义链接 (>100MB)',
-    description: '此选项适合 >100MB 的补丁, 这需要您自行提供下载链接'
+    label: '自定义链接',
+    description: '目前本站仅支持自定义链接上传，其他上传方式敬请期待'
   }
 ]
 

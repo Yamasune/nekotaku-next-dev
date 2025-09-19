@@ -27,7 +27,7 @@ export const KunResourceDownloadCard = ({ resource }: Props) => {
           variant="flat"
           startContent={storageIcons[resource.storage]}
         >
-          {SUPPORTED_RESOURCE_LINK_MAP[resource.storage as 's3' | 'user']}
+          {SUPPORTED_RESOURCE_LINK_MAP[resource.storage as 's3' | 'link']}
         </Chip>
         <Chip variant="flat" startContent={<Database className="w-4 h-4" />}>
           {resource.size}

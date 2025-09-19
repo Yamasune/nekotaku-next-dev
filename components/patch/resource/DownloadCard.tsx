@@ -38,7 +38,7 @@ export const ResourceDownloadCard = ({ resource }: Props) => {
         >
           {
             SUPPORTED_RESOURCE_LINK_MAP[
-              resource.storage as 's3' | 'onedrive' | 'user'
+            resource.storage as 's3' | 'onedrive' | 'link'
             ]
           }
         </Chip>
