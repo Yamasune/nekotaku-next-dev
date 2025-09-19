@@ -1,10 +1,10 @@
 {
   "friends": [
     {
-      "name": "TouchGal",
-      "avatar": "https://img.touchgalstatic.org/2024/06/8b9411844520240614204452.webp",
-      "label": "TouchGal 是一个一站式 Galgame 文化社区。提供Galgame 论坛、Galgame 下载等服务。承诺永久免费, 高质量。为Galgame 爱好者提供一片净土！",
-      "link": "https://www.touchgal.us"
+      "name": "喵源领域",
+      "avatar": "https://www.nekotaku.me/wp-content/uploads/2023/11/lite_logo_256.webp",
+      "label": "喵源领域是一个专注于高质量的Galgame文化分享网站, 提供最新最全的Galgame相关文件下载服务, 助力将Galgame游戏文化推向世界!",
+      "link": "https://www.nyantaku.net"
     },
     {
       "name": "鲲 Galgame 论坛",
@@ -13,16 +13,16 @@
       "link": "https://www.kungal.com"
     },
     {
+      "name": "TouchGal",
+      "avatar": "https://img.touchgalstatic.org/2024/06/8b9411844520240614204452.webp",
+      "label": "TouchGal 是一个一站式 Galgame 文化社区。提供Galgame 论坛、Galgame 下载等服务。承诺永久免费, 高质量。为Galgame 爱好者提供一片净土！",
+      "link": "https://www.touchgal.us"
+    },
+    {
       "name": "鸟白岛演绎厅",
       "avatar": "https://res.summerpockets.com/favicon.ico",
       "label": "鸟白岛演绎厅提供最全的专辑音乐收录，在这里你可以看到ACGN相关的专辑信息及其文件下载，另有交流社区可以沟通和申请收录等，快来看看吧。",
       "link": "https://www.summerpockets.com"
-    },
-    {
-      "name": "喵源领域",
-      "avatar": "https://www.nekotaku.me/wp-content/uploads/2023/11/lite_logo_256.webp",
-      "label": "喵源领域是一个专注于高质量的Galgame文化分享网站, 提供最新最全的Galgame相关文件下载服务, 助力将Galgame游戏文化推向世界!",
-      "link": "https://www.nekotaku.me"
     },
     {
       "name": "Mikiacg",

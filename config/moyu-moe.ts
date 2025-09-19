@@ -1,42 +1,41 @@
 import { SUPPORTED_TYPE_MAP } from '~/constants/resource'
 import type { KunSiteConfig } from './config'
 
-const KUN_SITE_NAME = 'TouchGal'
-const KUN_SITE_MENTION = '@touchgal'
-const KUN_SITE_TITLE = 'TouchGal - 一站式Galgame文化社区!'
+const KUN_SITE_NAME = '喵源领域'
+const KUN_SITE_MENTION = '@nekotaku'
+const KUN_SITE_TITLE = '喵源领域 - 此刻便再无等待的理由'
 const KUN_SITE_IMAGE =
-  'https://img.touchgalstatic.org/uploads/20241217174250074.avif'
+  'https://image.nullcloud.top/wp-content/uploads/2025/03/favicon.png'
 const KUN_SITE_DESCRIPTION =
-  'TouchGal 是一个一站式 Galgame 文化社区。提供Galgame 论坛、Galgame 下载等服务。承诺永久免费, 高质量。为Galgame 爱好者提供一片净土！'
-const KUN_SITE_URL = 'https://www.touchgal.us'
-const KUN_SITE_ARCHIVE = 'https://archive.touchgal.co/'
-const KUN_SITE_FORUM = 'https://bbs.touchgal.co/'
-const KUN_SITE_NAV = 'https://gal.red'
-const KUN_SITE_TELEGRAM_GROUP = 'https://s.miku.cyou/2'
-const KUN_SITE_DISCORD_GROUP = 'https://discord.gg/e4QePvPQTB'
+  '喵源领域是专注于Galgame综合交流社区，提供最新最全的Galgame资讯和交流平台，助力将Galgame文化推向世界！'
+const KUN_SITE_URL = 'https://www.nyantaku.net/'
+const KUN_SITE_ARCHIVE = 'https://www.nyantaku.com/'
+const KUN_SITE_FORUM = 'https://www.neko-plus.net/'
+const KUN_SITE_NAV = 'https://www.acgn.im/'
+const KUN_SITE_TELEGRAM_GROUP = 'https://t.me/nekotaku_board'
+const KUN_SITE_DISCORD_GROUP = 'https://t.me/nekotaku_channel'
 const KUN_SITE_LIST = [
-  { name: KUN_SITE_NAME, url: 'https://www.touchgal.net' },
-  { name: KUN_SITE_NAME, url: 'https://www.touchgal.moe' },
-  { name: KUN_SITE_NAME, url: 'https://www.touchgal.one' },
-  { name: KUN_SITE_NAME, url: 'https://www.touchgal.com' },
-  { name: KUN_SITE_NAME, url: 'https://www.touchgal.org' },
-  { name: KUN_SITE_NAME, url: 'https://www.touchgal.me' },
-  { name: KUN_SITE_NAME, url: 'https://www.touchgal.co' },
-  { name: KUN_SITE_NAME, url: 'https://www.touchgal.io' }
+  { name: KUN_SITE_NAME, url: 'https://www.nyantaku.com' },
+  { name: KUN_SITE_NAME, url: 'https://www.nekotaku.net' },
+  { name: KUN_SITE_NAME, url: 'https://www.nekotaku.xyz' },
+  { name: KUN_SITE_NAME, url: 'https://www.nekotaku.top' },
+  { name: KUN_SITE_NAME, url: 'https://www.nekotaku.me' },
+  { name: KUN_SITE_NAME, url: 'https://www.ourmoe.me' },
+  { name: KUN_SITE_NAME, url: 'https://www.symoe001.com' },
+  { name: KUN_SITE_NAME, url: 'https://www.symoe001.net' }
 ]
 const KUN_SITE_KEYWORDS = [
-  'TouchGAL',
-  'Gal',
+  '喵源领域',
+  'nekotaku',
+  'gal',
   'Galgame',
   '论坛',
   '网站',
   'Galgame 下载',
   'Galgame 资源',
-  'Galgame wiki',
+  'Galgame 百科',
   'Galgame 评测',
-  'Galgame 数据分析',
-  'Galgame 新作动态',
-  'Galgame 汉化 / 国际化',
+  'Galgame 汉化',
   'Galgame 制作',
   'Galgame 讨论',
   '游戏交流',
@@ -68,7 +67,7 @@ export const kunMoyuMoe: KunSiteConfig = {
   },
   domain: {
     main: KUN_SITE_URL,
-    imageBed: 'https://img.touchgalstatic.org',
+    imageBed: 'https://image.nullcloud.top',
     storage: KUN_SITE_URL,
     kungal: KUN_SITE_URL,
     telegram_group: KUN_SITE_TELEGRAM_GROUP,

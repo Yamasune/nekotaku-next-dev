@@ -3,7 +3,7 @@ const path = require('path')
 module.exports = {
   apps: [
     {
-      name: 'kun-touchgal-next',
+      name: 'nekotaku-next',
       port: 3000,
       cwd: path.join(__dirname),
       instances: 1,
