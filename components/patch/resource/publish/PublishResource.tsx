@@ -35,7 +35,8 @@ interface CreateResourceProps {
 }
 
 const userRoleStorageMap: Record<number, string> = {
-  1: 'link'
+  3: 'link',
+  4: 'link'
 }
 
 export const PublishResource = ({

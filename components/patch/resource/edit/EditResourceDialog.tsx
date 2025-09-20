@@ -86,8 +86,8 @@ export const EditResourceDialog = ({
       <ModalHeader className="flex-col space-y-2">
         <h3 className="text-lg">更改资源链接</h3>
         <p className="text-sm font-medium text-default-500">
-          若您想要更改您的对象存储链接, 您现在可以直接上传新文件,
-          系统会自动更新云端文件, 无需删除后重新发布
+          若您想要更改您的对象存储链接，您现在可以直接上传新文件,
+          系统会自动更新云端文件，无需删除后重新发布
         </p>
       </ModalHeader>
 
