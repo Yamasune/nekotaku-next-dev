@@ -40,7 +40,7 @@ export const Info = ({ intro }: Props) => {
                   underline="hover"
                   size="sm"
                   isExternal
-                  href={`https://vndb.org/${intro.vndbId}`}
+                  href={`https://vndb.org/v${intro.vndbId}`}
                 >
                   {intro.vndbId}
                 </LinkComp>
