@@ -134,7 +134,7 @@ export const storageTypes = [
 ]
 
 export const SUPPORTED_RESOURCE_LINK_MAP: Record<string, string> = {
-  link: '自定义链接下载'
+  link: '链接'
 }
 
 export const ALLOWED_MIME_TYPES = [
