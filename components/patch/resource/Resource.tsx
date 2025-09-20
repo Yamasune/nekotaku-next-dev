@@ -105,7 +105,7 @@ export const Resources = ({ id, vndbId }: Props) => {
           <Alert
             color="warning"
             variant="faded"
-            title="使用资源前请认真阅读资源的备注（如果有）, 以免产生问题"
+            title="使用资源前请认真阅读资源备注（如有），以免产生问题！"
             classNames={{
               base: 'shadow-medium',
               title: 'font-bold'

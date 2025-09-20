@@ -15,11 +15,11 @@ export const ResourceTab = ({ id, vndbId }: Props) => {
       <CardBody className="p-4">
         <div className="space-y-2 text-default-600">
           <p>
-            请注意, 本站的 Galgame 下载资源和补丁均来自互联网或用户上传,
+            注意：本站的 Galgame 资源及补丁均来自互联网或用户上传,
             请自行鉴别资源安全性。
           </p>
           <p>
-            如果您要发布资源, 请您选择正确的资源分类, 并仔细编写注意事项,
+            如果您要发布资源，请您选择正确的资源分类，并仔细编写注意事项，
             以免其它用户产生困扰。
           </p>
         </div>
