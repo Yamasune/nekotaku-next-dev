@@ -17,7 +17,7 @@ export const postToIndexNow = async (url: string) => {
 
   await fetch('https://www.bing.com/indexnow', {
     method: 'POST',
-    headers: { 'User-Agent': kunMoyuMoe.titleShort },
+    headers: { 'User-Agent': 'Nekotaku' },
     body: JSON.stringify(requestData)
   })
 }
