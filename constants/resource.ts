@@ -5,6 +5,16 @@ export const resourceTypes = [
     description: '可以在 Windows 系统上直接运行的 Galgame 游戏'
   },
   {
+    value: 'android',
+    label: 'Android 资源',
+    description: '可以在 Android 系统上直接安装运行的 Galgame 资源'
+  },
+  {
+    value: 'apple',
+    label: 'Apple 资源',
+    description: '可以在 Apple 系统上运行的 Galgame 资源'
+  },
+  {
     value: 'krkr',
     label: 'Kirikiroid2 资源',
     description: '采用 Kirikiroid2 模拟器运行的 Galgame 资源'
@@ -21,14 +31,9 @@ export const resourceTypes = [
     description: '可以在支持 Artemis 引擎的模拟器上运行的 Galgame 资源'
   },
   {
-    value: 'android',
-    label: 'Android 资源',
-    description: '可以在 Android 系统上直接安装运行的 Galgame 资源'
-  },
-  {
-    value: 'apple',
-    label: 'Apple 资源',
-    description: '可以在 Apple 系统上运行的 Galgame 资源'
+    value: 'renpy',
+    label: 'RenPy 资源',
+    description: '基于 RenPy 引擎的 Galgame 资源，可以在多个平台上运行'
   },
   {
     value: 'row',
@@ -64,11 +69,12 @@ export const resourceTypes = [
 
 export const SUPPORTED_TYPE = [
   'windows',
+  'android',
+  'apple',
   'krkr',
   'ons',
   'artemis',
-  'android',
-  'apple',
+  'renpy',
   'row',
   'chinese',
   'patch',
@@ -79,11 +85,12 @@ export const SUPPORTED_TYPE = [
 export const SUPPORTED_TYPE_MAP: Record<string, string> = {
   all: '全部类型',
   windows: 'Windows 资源',
+  android: 'Android 资源',
+  apple: 'Apple 资源',
   krkr: 'Kirikiroid2 资源',
   ons: 'ONScripter 资源',
   artemis: 'Artemis 资源',
-  android: 'Android 资源',
-  apple: 'Apple 资源',
+  renpy: 'RenPy 资源',
   row: '生肉资源',
   chinese: '汉化资源',
   patch: '补丁资源',
