@@ -3,6 +3,7 @@
 import { kunMoyuMoe } from '~/config/moyu-moe'
 import Link from 'next/link'
 import Image from 'next/image'
+import { Discord } from './icons/Discord'
 
 export const KunFooter = () => {
   return (
@@ -54,6 +55,7 @@ export const KunFooter = () => {
               rel="noopener noreferrer"
             >
               Discord
+              <Discord></>
             </Link>
           </div>
         </div>
