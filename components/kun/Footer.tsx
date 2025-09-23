@@ -55,7 +55,7 @@ export const KunFooter = () => {
               rel="noopener noreferrer"
             >
               Discord
-              <Discord></>
+              <Discord />
             </Link>
           </div>
         </div>
