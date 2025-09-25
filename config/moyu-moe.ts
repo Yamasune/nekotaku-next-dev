@@ -13,7 +13,7 @@ const KUN_SITE_ARCHIVE = 'https://www.nyantaku.com/'
 const KUN_SITE_FORUM = 'https://www.neko-plus.net/'
 const KUN_SITE_NAV = 'https://www.acgn.im/'
 const KUN_SITE_TELEGRAM_GROUP = 'https://t.me/nekotaku_board'
-const KUN_SITE_DISCORD_GROUP = 'https://t.me/nekotaku_channel'
+const KUN_SITE_DISCORD_GROUP = 'https://discord.gg/xUKfWtHMzD'
 const KUN_SITE_LIST = [
   { name: KUN_SITE_NAME, url: 'https://www.nyantaku.com' },
   { name: KUN_SITE_NAME, url: 'https://www.nekotaku.net' },
