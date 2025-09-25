@@ -105,23 +105,6 @@ export const PublishResource = ({
     <ModalContent>
       <ModalHeader className="flex-col space-y-2">
         <h3 className="text-lg">创建资源</h3>
-        <div className="text-sm font-medium text-default-500">
-          {user.role > 1 ? (
-            <div className="space-y-1">
-              <p>
-                作为创作者, 您每天有 5GB (5120MB) 的上传额度, 该额度每天早上 8
-                点重置
-              </p>
-              <p>{`您今日已使用存储 ${user.dailyUploadLimit.toFixed(3)} MB`}</p>
-              <Progress size="sm" value={progress} aria-label="已使用存储" />
-            </div>
-          ) : (
-            <>
-              您需要先自行发布 3 个补丁资源以使用我们的对象存储, 当您发布完成 3
-              个合法补丁后, 您可以 <Link href="/apply">申请成为创作者</Link>
-            </>
-          )}
-        </div>
       </ModalHeader>
 
       <ModalBody>
@@ -184,8 +167,7 @@ export const PublishResource = ({
         {creating && (
           <>
             <p>
-              我们正在将您的补丁从服务器同步到云端, 请稍后 ...
-              取决于您的网络环境, 这也许需要一段时间
+              我们正在将您的资源从服务器同步到云端，请稍后 ...
             </p>
           </>
         )}
