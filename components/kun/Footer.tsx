@@ -17,7 +17,7 @@ export const KunFooter = () => {
               width={30}
               height={30}
             />
-            <span>© 2025 {kunMoyuMoe.titleShort}</span>
+            <span>Copyright © 2025 {kunMoyuMoe.titleShort}</span>
           </Link>
 
           <div className="flex space-x-8">
@@ -35,19 +35,17 @@ export const KunFooter = () => {
             <Link href="/friend-link" className="flex items-center">
               友情链接
             </Link>
-
-            <Link
-              href="https://github.com/KUN1007/kun-touchgal-next"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center"
-            >
-              GitHub 仓库
-            </Link>
           </div>
 
           <div className="flex space-x-8">
-            <span className="flex items-center">联系我们</span>
+            <Link
+              href="https://to.acgn.im/dPIgGJ6ntm"
+              className="flex items-center"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Telegram
+            </Link>
             <Link
               href={kunMoyuMoe.domain.discord_group}
               className="flex items-center"
