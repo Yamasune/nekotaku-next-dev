@@ -8,10 +8,10 @@ const KUN_SITE_IMAGE =
   'https://image.nullcloud.top/uploads/favicon.webp'
 const KUN_SITE_DESCRIPTION =
   '喵源领域是专注于Galgame综合交流社区，提供最新最全的Galgame资讯和交流平台，助力将Galgame文化推向世界！'
-const KUN_SITE_URL = 'https://www.nyantaku.net/'
-const KUN_SITE_ARCHIVE = 'https://www.nyantaku.com/'
-const KUN_SITE_FORUM = 'https://www.neko-plus.net/'
-const KUN_SITE_NAV = 'https://www.acgn.im/'
+const KUN_SITE_URL = 'https://www.nyantaku.net'
+const KUN_SITE_ARCHIVE = 'https://www.nyantaku.com'
+const KUN_SITE_FORUM = 'https://www.neko-plus.net'
+const KUN_SITE_NAV = 'https://www.acgn.im'
 const KUN_SITE_TELEGRAM_GROUP = 'https://t.me/nekotaku_board'
 const KUN_SITE_DISCORD_GROUP = 'https://discord.gg/xUKfWtHMzD'
 const KUN_SITE_LIST = [
