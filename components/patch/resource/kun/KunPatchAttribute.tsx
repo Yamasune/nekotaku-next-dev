@@ -36,24 +36,30 @@ export const KunPatchAttribute = ({
   size = 'md'
 }: Props) => {
   return (
-    <div className={cn('flex flex-wrap gap-2', className)}>
+    <div
+      className={cn('flex gap-2 overflow-x-auto scrollbar-hide', className)}
+      style={{
+        scrollbarWidth: 'none',
+        msOverflowStyle: 'none'
+      }}
+    >
       {types.map((type) => (
-        <Chip key={type} variant="flat" color="primary" size={size}>
+        <Chip key={type} variant="flat" color="primary" size={size} className="flex-shrink-0">
           {SUPPORTED_TYPE_MAP[type]}
         </Chip>
       ))}
       {languages.map((lang) => (
-        <Chip key={lang} variant="flat" color="secondary" size={size}>
+        <Chip key={lang} variant="flat" color="secondary" size={size} className="flex-shrink-0">
           {SUPPORTED_LANGUAGE_MAP[lang]}
         </Chip>
       ))}
       {platforms.map((platform) => (
-        <Chip key={platform} variant="flat" color="success" size={size}>
+        <Chip key={platform} variant="flat" color="success" size={size} className="flex-shrink-0">
           {SUPPORTED_PLATFORM_MAP[platform]}
         </Chip>
       ))}
       {modelName && (
-        <Chip variant="flat" color="danger" size={size}>
+        <Chip variant="flat" color="danger" size={size} className="flex-shrink-0">
           {modelName}
         </Chip>
       )}
