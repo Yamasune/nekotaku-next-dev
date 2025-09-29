@@ -1,7 +1,7 @@
 {
   "name": "nekotaku-next",
   "version": "1.0.0",
-  "description": "TouchGAL是立足于分享快乐的一站式Galgame文化社区, 为Gal爱好者提供一片净土!",
+  "description": "基于 kun-touchgal-next 修改而来的喵源领域的新版 Galgame 程序",
   "private": true,
   "type": "module",
   "scripts": {
@@ -23,9 +23,9 @@
     "deploy:build": "esno scripts/deployBuild.ts"
   },
   "author": {
-    "name": "KUN1007",
-    "email": "kun@kungal.com",
-    "url": "https://github.com/KUN1007"
+    "name": "Yamasune",
+    "email": "Yamasune@github.com",
+    "url": "https://github.com/Yamasune"
   },
   "license": "AGPL-3.0-only",
   "browserslist": [
