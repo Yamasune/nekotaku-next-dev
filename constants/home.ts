@@ -1,4 +1,4 @@
-import { Tags, Drive, FileText } from 'lucide-react'
+import { Tags, Hard-drive, FileText } from 'lucide-react'
 import { kunMoyuMoe } from '~/config/moyu-moe'
 import type { LucideProps } from 'lucide-react'
 import type { ForwardRefExoticComponent, RefAttributes } from 'react'
@@ -22,9 +22,9 @@ export const homeNavigationItems: HomeNavItem[] = [
     isExternal: false
   },
   {
-    icon: Drive,
+    icon: 'Hard-drive',
     label: '网盘',
-    href: kunMoyuMoe.domain.forum,
+    href: 'https://www.nullcloud.top/',
     color: 'secondary',
     isExternal: true
   },
