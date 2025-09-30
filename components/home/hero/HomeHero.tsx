@@ -14,18 +14,18 @@ export const HomeHero = () => {
   const posts = getKunPosts()
 
   return (
-    <div className="w-full sm:w-1/2 overflow-hidden scrollbar-hide">
+    <div className="w-full sm:w-1/2 overflow-hidden">
       {/* 主模块容器 - 带悬停动画效果 */}
       <div className="relative transition-all duration-700 ease-in-out rounded-xl overflow-hidden group mb-8">
-        <Card className="border-none bg-white transition-all duration-700 ease-in-out group-hover:bg-gradient-to-r from-blue-500 to-blue-600">
+        <Card className="border-none bg-white transition-all duration-700 ease-in-out group-hover:bg-gradient-to-r from-blue-500 to-blue-600 scrollbar-hide">
           <CardBody className="p-6 md:p-10">
             <div className="flex flex-col md:flex-row items-center justify-between gap-8">
               {/* 左侧文字区域 */}
               <div className="text-center md:text-left z-10 transition-all duration-500 group-hover:text-white">
-                <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-4">
+                <h1 className="text-4xl md:text-4xl lg:text-6xl font-bold mb-4">
                   生活明朗
                 </h1>
-                <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6">
+                <h2 className="text-4xl md:text-4xl lg:text-6xl font-bold mb-6">
                   万物可爱
                 </h2>
                 <p className="text-gray-500 text-lg group-hover:text-blue-100">
@@ -75,8 +75,14 @@ export const HomeHero = () => {
         </Card>
       </div>
 
-      {/* 保留轮播组件，保持原有内容展示 */}
-      <KunCarousel posts={posts} />
+      <div className="grid grid-cols-3 gap-3 sm:gap-6">
+        <KunHomeNavigationItems buttonSize="lg" />
+      </div>
     </div>
+
+
+      {/* 保留轮播组件，保持原有内容展示 */ }
+  <KunCarousel posts={posts} />
+    </div >
   )
 }
