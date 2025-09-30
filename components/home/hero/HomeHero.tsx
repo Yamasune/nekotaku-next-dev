@@ -2,6 +2,7 @@ import { Card, CardBody } from '@heroui/card'
 import { getKunPosts } from '../carousel/mdx'
 import { RandomGalgameButton } from '../carousel/RandomGalgameButton'
 import { KunCarousel } from '../carousel/KunCarousel'
+import { KunHomeNavigationItems } from '../NavigationItems'
 
 // 假设使用的图标（如果实际项目中有对应图标库，可替换）
 import { Share2 } from 'lucide-react' // 替代分享图标
