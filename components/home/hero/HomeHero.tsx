@@ -14,7 +14,7 @@ export const HomeHero = () => {
   const posts = getKunPosts()
 
   return (
-    <div className="w-full sm:w-1/2 overflow-hidden">
+    <div className="w-full sm:w-1/2 overflow-hidden ">
       {/* 主模块容器 - 带悬停动画效果 */}
       <div className="relative transition-all duration-700 ease-in-out rounded-xl overflow-hidden group mb-8">
         <Card className="border-none bg-white transition-all duration-700 ease-in-out group-hover:bg-gradient-to-r from-blue-500 to-blue-600 scrollbar-hide">
@@ -70,18 +70,18 @@ export const HomeHero = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                 </svg>
               </RandomGalgameButton>
+
+              <div className="grid grid-cols-3 gap-3 sm:gap-6">
+                <KunHomeNavigationItems buttonSize="lg" />
+              </div>
+
             </div>
           </CardBody>
         </Card>
       </div>
 
-      <div className="grid grid-cols-3 gap-3 sm:gap-6">
-        <KunHomeNavigationItems buttonSize="lg" />
-      </div>
+      {/* 保留轮播组件，保持原有内容展示 */}
+      <KunCarousel posts={posts} />
     </div>
-
-
-  <KunCarousel posts={posts} />
-    </div >
   )
 }
