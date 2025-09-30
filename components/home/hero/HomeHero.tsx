@@ -33,34 +33,27 @@ export const HomeHero = () => {
                   </p>
                 </div>
 
-                {/* 右侧图标区域 - 两列并排，左低右高斜着排放 */}
+                {/* 右侧图标区域 - 调整高度 */}
                 <div className="relative w-full md:w-1/2 h-48 md:h-64 z-10 flex-shrink-0">
-                  {/* 左列图标 - 位置较低 */}
-                  <div className="absolute left-0 top-1/2 transform -translate-y-1/2 space-y-4">
-                    {/* 红色分享图标 */}
-                    <div className="w-16 h-16 md:w-20 md:h-20 bg-red-500 rounded-lg flex items-center justify-center shadow-lg transform rotate-6 transition-transform duration-300 group-hover:scale-110">
-                      <Share2 className="w-8 h-8 md:w-10 md:h-10 text-white" />
-                    </div>
-                    {/* 白色咖啡图标 */}
-                    <div className="w-16 h-16 md:w-20 md:h-20 bg-white rounded-lg flex items-center justify-center shadow-lg transform rotate-12 transition-transform duration-300 group-hover:scale-110">
-                      <Coffee className="w-8 h-8 md:w-10 md:h-10 text-amber-700" />
-                    </div>
-                    {/* 蓝色船图标 */}
-                    <div className="w-16 h-16 md:w-20 md:h-20 bg-blue-500 rounded-lg flex items-center justify-center shadow-lg transform -rotate-6 transition-transform duration-300 group-hover:scale-110">
-                      <Ship className="w-8 h-8 md:w-10 md:h-10 text-white" />
-                    </div>
+                  {/* 红色分享图标 */}
+                  <div className="absolute top-0 left-1/4 w-16 h-16 md:w-24 md:h-24 bg-red-500 rounded-lg flex items-center justify-center shadow-lg transform rotate-6 transition-transform duration-300 group-hover:scale-110">
+                    <Share2 className="w-8 h-8 md:w-12 md:h-12 text-white" />
                   </div>
-
-                  {/* 右列图标 - 位置较高 */}
-                  <div className="absolute right-0 top-1/4 space-y-4">
-                    {/* 黄色JS图标 */}
-                    <div className="w-16 h-16 md:w-20 md:h-20 bg-yellow-400 rounded-lg flex items-center justify-center shadow-lg transform -rotate-3 transition-transform duration-300 group-hover:scale-110">
-                      <Code className="w-8 h-8 md:w-10 md:h-10 text-black" />
-                    </div>
-                    {/* 黑色Node图标 */}
-                    <div className="w-16 h-16 md:w-20 md:h-20 bg-gray-900 rounded-lg flex items-center justify-center shadow-lg transform rotate-9 transition-transform duration-300 group-hover:scale-110">
-                      <Server className="w-8 h-8 md:w-10 md:h-10 text-green-400" />
-                    </div>
+                  {/* 黄色JS图标 */}
+                  <div className="absolute top-10 left-1/2 w-16 h-16 md:w-24 md:h-24 bg-yellow-400 rounded-lg flex items-center justify-center shadow-lg transform -rotate-3 transition-transform duration-300 group-hover:scale-110">
+                    <Code className="w-8 h-8 md:w-12 md:h-12 text-black" />
+                  </div>
+                  {/* 白色咖啡图标 */}
+                  <div className="absolute bottom-10 left-1/3 w-16 h-16 md:w-24 md:h-24 bg-white rounded-lg flex items-center justify-center shadow-lg transform rotate-12 transition-transform duration-300 group-hover:scale-110">
+                    <Coffee className="w-8 h-8 md:w-12 md:h-12 text-amber-700" />
+                  </div>
+                  {/* 蓝色船图标 */}
+                  <div className="absolute bottom-0 left-2/3 w-16 h-16 md:w-24 md:h-24 bg-blue-500 rounded-lg flex items-center justify-center shadow-lg transform -rotate-6 transition-transform duration-300 group-hover:scale-110">
+                    <Ship className="w-8 h-8 md:w-12 md:h-12 text-white" />
+                  </div>
+                  {/* 黑色Node图标 */}
+                  <div className="absolute top-1/2 right-0 w-16 h-16 md:w-24 md:h-24 bg-gray-900 rounded-lg flex items-center justify-center shadow-lg transform rotate-9 transition-transform duration-300 group-hover:scale-110">
+                    <Server className="w-8 h-8 md:w-12 md:h-12 text-green-400" />
                   </div>
                 </div>
               </div>
