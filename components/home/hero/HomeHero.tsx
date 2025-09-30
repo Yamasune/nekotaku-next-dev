@@ -22,10 +22,10 @@ export const HomeHero = () => {
             <div className="flex flex-col md:flex-row items-center justify-between gap-8">
               {/* 左侧文字区域 */}
               <div className="text-center md:text-left z-10 transition-all duration-500 group-hover:text-white">
-                <h1 className="text-4xl md:text-4xl lg:text-6xl font-bold mb-4">
+                <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
                   生活明朗
                 </h1>
-                <h2 className="text-4xl md:text-4xl lg:text-6xl font-bold mb-6">
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
                   万物可爱
                 </h2>
                 <p className="text-gray-500 text-lg group-hover:text-blue-100">
@@ -81,7 +81,6 @@ export const HomeHero = () => {
     </div>
 
 
-      {/* 保留轮播组件，保持原有内容展示 */ }
   <KunCarousel posts={posts} />
     </div >
   )
