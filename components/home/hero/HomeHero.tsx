@@ -34,7 +34,7 @@ export const HomeHero = () => {
                   {/* 红色分享图片 */}
                   <div className="absolute top-0 left-1/4 w-16 h-16 md:w-24 md:h-24 bg-red-500 rounded-lg flex items-center justify-center shadow-lg transform rotate-6 transition-transform duration-300 group-hover:scale-110 overflow-hidden">
                     <Image
-                      src="./pubilc/home/sticker1.webp"
+                      src="/home/sticker1.webp"
                       alt="分享图标"
                       width={48}
                       height={48}
@@ -44,7 +44,7 @@ export const HomeHero = () => {
                   {/* 黄色JS图片 */}
                   <div className="absolute top-10 left-1/2 w-16 h-16 md:w-24 md:h-24 bg-yellow-400 rounded-lg flex items-center justify-center shadow-lg transform -rotate-3 transition-transform duration-300 group-hover:scale-110 overflow-hidden">
                     <Image
-                      src="./pubilc/home/sticker2.webp"
+                      src="/home/sticker2.webp"
                       alt="JavaScript图标"
                       width={48}
                       height={48}
@@ -54,7 +54,7 @@ export const HomeHero = () => {
                   {/* 白色咖啡图片 */}
                   <div className="absolute bottom-10 left-1/3 w-16 h-16 md:w-24 md:h-24 bg-white rounded-lg flex items-center justify-center shadow-lg transform rotate-12 transition-transform duration-300 group-hover:scale-110 overflow-hidden">
                     <Image
-                      src="./pubilc/home/sticker3.webp"
+                      src="/home/sticker3.webp"
                       alt="咖啡图标"
                       width={48}
                       height={48}
@@ -64,7 +64,7 @@ export const HomeHero = () => {
                   {/* 蓝色船图片 */}
                   <div className="absolute bottom-0 left-2/3 w-16 h-16 md:w-24 md:h-24 bg-blue-500 rounded-lg flex items-center justify-center shadow-lg transform -rotate-6 transition-transform duration-300 group-hover:scale-110 overflow-hidden">
                     <Image
-                      src="./pubilc/home/sticker4.webp"
+                      src="/home/sticker4.webp"
                       alt="船图标"
                       width={48}
                       height={48}
@@ -74,7 +74,7 @@ export const HomeHero = () => {
                   {/* 黑色Node图片 */}
                   <div className="absolute top-1/2 right-0 w-16 h-16 md:w-24 md:h-24 bg-gray-900 rounded-lg flex items-center justify-center shadow-lg transform rotate-9 transition-transform duration-300 group-hover:scale-110 overflow-hidden">
                     <Image
-                      src="./pubilc/home/sticker5.webp"
+                      src="/home/sticker5.webp"
                       alt="Node.js图标"
                       width={48}
                       height={48}
