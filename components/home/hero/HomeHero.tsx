@@ -2,7 +2,11 @@ import { Card, CardBody } from '@heroui/card'
 import { getKunPosts } from '../carousel/mdx'
 import { RandomGalgameButton } from '../carousel/RandomGalgameButton'
 import { KunCarousel } from '../carousel/KunCarousel'
-import Image from 'next/image'
+import { Share2 } from 'lucide-react'
+import { Coffee } from 'lucide-react'
+import { Ship } from 'lucide-react'
+import { Code } from 'lucide-react'
+import { Server } from 'lucide-react'
 
 export const HomeHero = () => {
   const posts = getKunPosts()
@@ -29,57 +33,27 @@ export const HomeHero = () => {
                   </p>
                 </div>
 
-                {/* 右侧图片区域 - 调整高度 */}
+                {/* 右侧图标区域 - 调整高度 */}
                 <div className="relative w-full md:w-1/2 h-48 md:h-64 z-10 flex-shrink-0">
-                  {/* 图片1 - 左上角 */}
-                  <div className="absolute top-0 left-1/4 w-16 h-16 md:w-24 md:h-24 rounded-lg shadow-lg transform rotate-6 transition-transform duration-300 group-hover:scale-110 overflow-hidden">
-                    <Image
-                      src="/posts/kun/moe/kun.webp"
-                      alt="图片1"
-                      width={96}
-                      height={96}
-                      className="w-full h-full object-cover"
-                    />
+                  {/* 红色分享图标 */}
+                  <div className="absolute top-0 left-1/4 w-16 h-16 md:w-24 md:h-24 bg-red-500 rounded-lg flex items-center justify-center shadow-lg transform rotate-6 transition-transform duration-300 group-hover:scale-110">
+                    <Share2 className="w-8 h-8 md:w-12 md:h-12 text-white" />
                   </div>
-                  {/* 图片2 - 右上角 */}
-                  <div className="absolute top-10 left-1/2 w-16 h-16 md:w-24 md:h-24 rounded-lg shadow-lg transform -rotate-3 transition-transform duration-300 group-hover:scale-110 overflow-hidden">
-                    <Image
-                      src="/posts/kun/ren/ren1.avif"
-                      alt="图片2"
-                      width={96}
-                      height={96}
-                      className="w-full h-full object-cover"
-                    />
+                  {/* 黄色JS图标 */}
+                  <div className="absolute top-10 left-1/2 w-16 h-16 md:w-24 md:h-24 bg-yellow-400 rounded-lg flex items-center justify-center shadow-lg transform -rotate-3 transition-transform duration-300 group-hover:scale-110">
+                    <Code className="w-8 h-8 md:w-12 md:h-12 text-black" />
                   </div>
-                  {/* 图片3 - 左下角 */}
-                  <div className="absolute bottom-10 left-1/3 w-16 h-16 md:w-24 md:h-24 rounded-lg shadow-lg transform rotate-12 transition-transform duration-300 group-hover:scale-110 overflow-hidden">
-                    <Image
-                      src="/posts/kun/ren/ren2.avif"
-                      alt="图片3"
-                      width={96}
-                      height={96}
-                      className="w-full h-full object-cover"
-                    />
+                  {/* 白色咖啡图标 */}
+                  <div className="absolute bottom-10 left-1/3 w-16 h-16 md:w-24 md:h-24 bg-white rounded-lg flex items-center justify-center shadow-lg transform rotate-12 transition-transform duration-300 group-hover:scale-110">
+                    <Coffee className="w-8 h-8 md:w-12 md:h-12 text-amber-700" />
                   </div>
-                  {/* 图片4 - 右下角 */}
-                  <div className="absolute bottom-0 left-2/3 w-16 h-16 md:w-24 md:h-24 rounded-lg shadow-lg transform -rotate-6 transition-transform duration-300 group-hover:scale-110 overflow-hidden">
-                    <Image
-                      src="/posts/notice/donate/qr1.avif"
-                      alt="图片4"
-                      width={96}
-                      height={96}
-                      className="w-full h-full object-cover"
-                    />
+                  {/* 蓝色船图标 */}
+                  <div className="absolute bottom-0 left-2/3 w-16 h-16 md:w-24 md:h-24 bg-blue-500 rounded-lg flex items-center justify-center shadow-lg transform -rotate-6 transition-transform duration-300 group-hover:scale-110">
+                    <Ship className="w-8 h-8 md:w-12 md:h-12 text-white" />
                   </div>
-                  {/* 图片5 - 右侧中间 */}
-                  <div className="absolute top-1/2 right-0 w-16 h-16 md:w-24 md:h-24 rounded-lg shadow-lg transform rotate-9 transition-transform duration-300 group-hover:scale-110 overflow-hidden">
-                    <Image
-                      src="/posts/notice/donate/qr2.avif"
-                      alt="图片5"
-                      width={96}
-                      height={96}
-                      className="w-full h-full object-cover"
-                    />
+                  {/* 黑色Node图标 */}
+                  <div className="absolute top-1/2 right-0 w-16 h-16 md:w-24 md:h-24 bg-gray-900 rounded-lg flex items-center justify-center shadow-lg transform rotate-9 transition-transform duration-300 group-hover:scale-110">
+                    <Server className="w-8 h-8 md:w-12 md:h-12 text-green-400" />
                   </div>
                 </div>
               </div>
