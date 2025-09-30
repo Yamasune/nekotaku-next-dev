@@ -13,15 +13,15 @@ export const HomeHero = () => {
 
   return (
     <div className="w-full flex flex-col sm:flex-row gap-6">
-      {/* 左侧 Card 组件 */}
+      {/* 左侧 Card 组件 - 调整高度 */}
       <div className="w-full sm:w-1/2 overflow-hidden">
-        {/* 主模块容器 - 带悬停动画效果 */}
-        <div className="scrollbar-hide relative transition-all duration-700 ease-in-out rounded-xl overflow-hidden group mb-8">
+        {/* 主模块容器 - 调整高度与右侧一致 */}
+        <div className="scrollbar-hide relative transition-all duration-700 ease-in-out rounded-xl overflow-hidden group h-full">
           <Card className="border-none bg-white transition-all duration-700 ease-in-out group-hover:bg-gradient-to-r from-blue-500 to-blue-600 h-full">
-            <CardBody className="p-6 md:p-10">
-              <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+            <CardBody className="p-6 md:p-10 h-full flex flex-col justify-center">
+              <div className="flex flex-col md:flex-row items-center justify-between gap-8 h-full">
                 {/* 左侧文字区域 */}
-                <div className="text-center md:text-left z-10 transition-all duration-500 group-hover:text-white">
+                <div className="text-center md:text-left z-10 transition-all duration-500 group-hover:text-white flex-1">
                   <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
                     高质量资源
                   </h1>
@@ -33,8 +33,8 @@ export const HomeHero = () => {
                   </p>
                 </div>
 
-                {/* 右侧图标区域 - 斜向排列 */}
-                <div className="relative w-full md:w-1/2 h-48 md:h-64 z-10">
+                {/* 右侧图标区域 - 调整高度 */}
+                <div className="relative w-full md:w-1/2 h-48 md:h-64 z-10 flex-shrink-0">
                   {/* 红色分享图标 */}
                   <div className="absolute top-0 left-1/4 w-16 h-16 md:w-24 md:h-24 bg-red-500 rounded-lg flex items-center justify-center shadow-lg transform rotate-6 transition-transform duration-300 group-hover:scale-110">
                     <Share2 className="w-8 h-8 md:w-12 md:h-12 text-white" />

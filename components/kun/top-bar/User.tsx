@@ -88,7 +88,7 @@ export const KunTopBarUser = () => {
             disableAnimation
             showArrow
             closeDelay={0}
-            content="随机一部游戏"
+            content="随便逛逛"
           >
             <RandomGalgameButton isIconOnly variant="light" />
           </Tooltip>

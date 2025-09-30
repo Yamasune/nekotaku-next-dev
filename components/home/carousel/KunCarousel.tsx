@@ -107,7 +107,7 @@ export const KunCarousel = ({ posts }: KunCarouselProps) => {
           size="sm"
           fullWidth
         >
-          随机一部游戏
+          随便逛逛
         </RandomGalgameButton>
 
         <div className="grid grid-cols-3 gap-3 sm:hidden sm:gap-6">
@@ -133,11 +133,10 @@ export const KunCarousel = ({ posts }: KunCarouselProps) => {
         {posts.map((_, index) => (
           <button
             key={index}
-            className={`w-1.5 h-1.5 rounded-full transition-all ${
-              index === currentSlide
+            className={`w-1.5 h-1.5 rounded-full transition-all ${index === currentSlide
                 ? 'bg-primary w-4'
                 : 'bg-foreground/20 hover:bg-foreground/40'
-            }`}
+              }`}
             onClick={() => {
               setDirection(index > currentSlide ? 1 : -1)
               setCurrentSlide(index)
