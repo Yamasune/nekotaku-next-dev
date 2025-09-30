@@ -14,7 +14,7 @@ export const HomeHero = () => {
   const posts = getKunPosts()
 
   return (
-    <div className="w-full sm:w-1/2 overflow-hidden">
+    <div className="w-full sm:w-1/2 overflow-hidden scrollbar-hide">
       {/* 主模块容器 - 带悬停动画效果 */}
       <div className="relative transition-all duration-700 ease-in-out rounded-xl overflow-hidden group mb-8">
         <Card className="border-none bg-white transition-all duration-700 ease-in-out group-hover:bg-gradient-to-r from-blue-500 to-blue-600">
