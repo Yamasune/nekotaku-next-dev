@@ -2,13 +2,11 @@ import { Card, CardBody } from '@heroui/card'
 import { getKunPosts } from '../carousel/mdx'
 import { RandomGalgameButton } from '../carousel/RandomGalgameButton'
 import { KunCarousel } from '../carousel/KunCarousel'
-
-// 假设使用的图标（如果实际项目中有对应图标库，可替换）
-import { Share2 } from 'lucide-react' // 替代分享图标
-import { Coffee } from 'lucide-react' // 替代咖啡图标
-import { Ship } from 'lucide-react' // 替代船图标
-import { Code } from 'lucide-react' // 替代JS图标
-import { Server } from 'lucide-react' // 替代Node图标
+import { Share2 } from 'lucide-react'
+import { Coffee } from 'lucide-react'
+import { Ship } from 'lucide-react'
+import { Code } from 'lucide-react'
+import { Server } from 'lucide-react'
 
 export const HomeHero = () => {
   const posts = getKunPosts()

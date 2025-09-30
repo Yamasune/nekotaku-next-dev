@@ -40,7 +40,7 @@ export const RandomGalgameButton = (props: KunButtonProps) => {
       {props.isIconOnly ? (
         <Dices className="text-default-500 size-6" />
       ) : (
-        '随机资源'
+        '随便逛逛'
       )}
     </Button>
   )
