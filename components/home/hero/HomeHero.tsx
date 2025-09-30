@@ -14,19 +14,19 @@ export const HomeHero = () => {
   const posts = getKunPosts()
 
   return (
-    <div className="w-full flex flex-col lg:flex-row gap-8">
+    <div className="w-full sm:w-1/2 overflow-hidden ">
       {/* 主模块容器 - 带悬停动画效果 */}
-      <div className="relative transition-all duration-700 ease-in-out rounded-xl overflow-hidden group mb-8 scrollbar-hide">
+      <div className="scrollbar-hide relative transition-all duration-700 ease-in-out rounded-xl overflow-hidden group mb-8">
         <Card className="border-none bg-white transition-all duration-700 ease-in-out group-hover:bg-gradient-to-r from-blue-500 to-blue-600">
           <CardBody className="p-6 md:p-10">
             <div className="flex flex-col md:flex-row items-center justify-between gap-8">
               {/* 左侧文字区域 */}
               <div className="text-center md:text-left z-10 transition-all duration-500 group-hover:text-white">
                 <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-                  Galgame
+                  高质量资源
                 </h1>
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-                  与你分享
+                  与您分享
                 </h2>
                 <p className="text-gray-500 text-lg group-hover:text-blue-100">
                   NEKOTAKU
@@ -65,7 +65,6 @@ export const HomeHero = () => {
                 color="primary"
                 variant="solid"
               >
-                <span>随便逛逛</span>
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                 </svg>
