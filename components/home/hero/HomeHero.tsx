@@ -15,6 +15,7 @@ export const HomeHero = () => {
         <div className="relative transition-all duration-700 ease-in-out rounded-xl overflow-hidden group h-[300px]">
           <Card className="border-none bg-white transition-all duration-700 ease-in-out group-hover:bg-gradient-to-r from-blue-500 to-blue-600 h-full shadow-medium">
             <CardBody className="p-6 md:p-10 h-full flex flex-col justify-center relative overflow-hidden">
+
               <div className="flex flex-col md:flex-row items-center justify-between gap-8 h-full">
                 {/* 左侧文字区域 */}
                 <div className="text-center md:text-left z-10 transition-all duration-500 group-hover:text-white flex-1">
@@ -31,7 +32,7 @@ export const HomeHero = () => {
 
                 {/* 右侧图片区域 - 调整高度 */}
                 <div className="relative w-full md:w-1/2 h-48 md:h-64 z-10 flex-shrink-0">
-                  {/* 红色分享图片 */}
+                  {/* 第一行图片数组 */}
                   <div className="absolute top-0 left-1/4 w-16 h-16 md:w-24 md:h-24 bg-red-500 rounded-lg shadow-lg transform rotate-6 transition-transform duration-300 group-hover:scale-110 overflow-hidden">
                     <Image
                       src="/home/sticker1.webp"
@@ -41,41 +42,11 @@ export const HomeHero = () => {
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  {/* 黄色JS图片 */}
+                  {/* 第二行图片数组 */}
                   <div className="absolute top-10 left-1/2 w-16 h-16 md:w-24 md:h-24 bg-yellow-400 rounded-lg shadow-lg transform -rotate-3 transition-transform duration-300 group-hover:scale-110 overflow-hidden">
                     <Image
                       src="/home/sticker2.webp"
                       alt="JavaScript图标"
-                      width={96}
-                      height={96}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  {/* 白色咖啡图片 */}
-                  <div className="absolute bottom-10 left-1/3 w-16 h-16 md:w-24 md:h-24 bg-white rounded-lg shadow-lg transform rotate-12 transition-transform duration-300 group-hover:scale-110 overflow-hidden">
-                    <Image
-                      src="/home/sticker3.webp"
-                      alt="咖啡图标"
-                      width={96}
-                      height={96}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  {/* 蓝色船图片 */}
-                  <div className="absolute bottom-0 left-2/3 w-16 h-16 md:w-24 md:h-24 bg-blue-500 rounded-lg shadow-lg transform -rotate-6 transition-transform duration-300 group-hover:scale-110 overflow-hidden">
-                    <Image
-                      src="/home/sticker4.webp"
-                      alt="船图标"
-                      width={96}
-                      height={96}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  {/* 黑色Node图片 */}
-                  <div className="absolute top-1/2 right-0 w-16 h-16 md:w-24 md:h-24 bg-gray-900 rounded-lg shadow-lg transform rotate-9 transition-transform duration-300 group-hover:scale-110 overflow-hidden">
-                    <Image
-                      src="/home/sticker5.webp"
-                      alt="Node.js图标"
                       width={96}
                       height={96}
                       className="w-full h-full object-cover"
@@ -96,6 +67,7 @@ export const HomeHero = () => {
                   </svg>
                 </RandomGalgameButton>
               </div>
+
             </CardBody>
           </Card>
         </div>
