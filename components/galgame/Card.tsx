@@ -22,7 +22,7 @@ export const GalgameCard = ({ patch, openOnNewTab = true }: Props) => {
       as={Link}
       href={`/${patch.uniqueId}`}
       target={openOnNewTab ? '_blank' : '_self'}
-      className="w-full border border-default-100 dark:border-default-200"
+      className="w-full border-2 border-transparent hover:border-primary-500 transition-colors duration-300 group"
     >
       <CardHeader className="p-0">
         <div className="relative w-full mx-auto overflow-hidden text-center rounded-t-lg opacity-90">
@@ -38,7 +38,7 @@ export const GalgameCard = ({ patch, openOnNewTab = true }: Props) => {
             radius="none"
             alt={patch.name}
             className={cn(
-              'size-full object-cover transition-all duration-300',
+              'size-full object-cover transition-all duration-300 group-hover:scale-110',
               imageLoaded ? 'scale-100 opacity-90' : 'scale-105 opacity-0'
             )}
             removeWrapper={true}

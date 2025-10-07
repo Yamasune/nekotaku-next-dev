@@ -101,7 +101,6 @@ export const KunCarousel = ({ posts }: KunCarouselProps) => {
 
       <div className="z-10 w-full py-3 space-y-3 sm:hidden">
         <RandomGalgameButton
-          className="shadow-md"
           color="primary"
           variant="flat"
           size="sm"
@@ -134,8 +133,8 @@ export const KunCarousel = ({ posts }: KunCarouselProps) => {
           <button
             key={index}
             className={`w-1.5 h-1.5 rounded-full transition-all ${index === currentSlide
-                ? 'bg-primary w-4'
-                : 'bg-foreground/20 hover:bg-foreground/40'
+              ? 'bg-primary w-4'
+              : 'bg-foreground/20 hover:bg-foreground/40'
               }`}
             onClick={() => {
               setDirection(index > currentSlide ? 1 : -1)

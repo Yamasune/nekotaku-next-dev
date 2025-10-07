@@ -85,10 +85,13 @@ export const KunTopBarUser = () => {
           <KunSearch />
 
           <Tooltip
-            disableAnimation
             showArrow
             closeDelay={0}
             content="随便逛逛"
+            classNames={{
+              base: "transition-all duration-300 ease-in-out",
+              content: "transition-all duration-300 ease-in-out"
+            }}
           >
             <RandomGalgameButton isIconOnly variant="light" />
           </Tooltip>

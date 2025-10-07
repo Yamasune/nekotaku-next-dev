@@ -15,10 +15,13 @@ export const KunSearch = () => {
 
   return (
     <Tooltip
-      disableAnimation
       showArrow
       closeDelay={0}
       content="您可以按下 Ctrl + K 快速搜索"
+      classNames={{
+        base: "transition-all duration-300 ease-in-out",
+        content: "transition-all duration-300 ease-in-out"
+      }}
     >
       <Button
         isIconOnly

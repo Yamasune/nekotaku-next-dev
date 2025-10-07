@@ -58,7 +58,15 @@ export const ThemeSwitcher = () => {
 
   return (
     <Dropdown className="min-w-0">
-      <Tooltip disableAnimation showArrow closeDelay={0} content="主题切换">
+      <Tooltip 
+        showArrow 
+        closeDelay={0} 
+        content="主题切换"
+        classNames={{
+          base: "transition-all duration-300 ease-in-out",
+          content: "transition-all duration-300 ease-in-out"
+        }}
+      >
         <div className="flex">
           <DropdownTrigger>
             <Button

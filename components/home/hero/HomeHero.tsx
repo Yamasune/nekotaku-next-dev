@@ -44,15 +44,15 @@ export const HomeHero = () => {
       <div className="w-full sm:w-1/2 overflow-hidden">
         {/* 主模块容器 - 调整高度与右侧一致 */}
         <div className="relative transition-all duration-700 ease-in-out rounded-xl overflow-hidden group h-[300px]">
-         <Card className="border border-gray-200 shadow-md bg-white transition-all duration-700 ease-in-out group-hover:bg-gradient-to-r from-blue-500 to-blue-600 h-full">
+          <Card className="border border-default-200 bg-content1 transition-all duration-700 ease-in-out group-hover:bg-gradient-to-r from-blue-500 to-blue-600 h-full">
             <CardBody className="p-6 md:p-10 h-full flex flex-col justify-center relative overflow-hidden">
 
               <div className="flex flex-col md:flex-row items-center justify-between gap-8 h-full">
                 {/* 左侧文字区域 申金*/}
-                <div className="text-center md:text-left z-10 transition-all duration-500 group-hover:text-white flex-1 absolute top-[20px]">
-                  <h1 className="text-3xl md:text-4xl lg:text-4xl font-bold mb-4">高质量资源</h1>
-                  <h2 className="text-3xl md:text-4xl lg:text-4xl font-bold mb-6">与您分享</h2>
-                  <p className="text-gray-500 text-lg group-hover:text-blue-100">NEKOTAKU</p>
+                <div className="text-center md:text-left z-10 transition-all duration-500 group-hover:text-white flex-1 absolute top-[40px]">
+                  <h1 className="text-3xl md:text-4xl lg:text-4xl font-bold mb-2">高质量资源</h1>
+                  <h2 className="text-3xl md:text-4xl lg:text-4xl font-bold mb-4">与您分享</h2>
+                  <p className="text-default-500 text-lg group-hover:text-blue-100">NEKOTAKU</p>
                 </div>
 
                 {/* 右侧图片区域：上下排列 */}
@@ -76,7 +76,7 @@ export const HomeHero = () => {
                     <Marquee
                       images={second_images}
                       speed={20} // 控制速度建议 10-20 即可
-                      // reverse // 如需启用请取消注释 | 反向滚动
+                    // reverse // 如需启用请取消注释 | 反向滚动
                     />
                   </div>
                 </div>
@@ -85,7 +85,7 @@ export const HomeHero = () => {
               {/* 随便逛逛按钮 - 悬停时显示 */}
               <div className="absolute bottom-0 left-0 right-0 p-6 flex justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-out">
                 <RandomGalgameButton
-                  className="bg-white text-blue-600 hover:bg-blue-50 text-lg px-8 py-6 rounded-full font-medium shadow-lg flex items-center gap-2"
+                  className="bg-content1 text-primary hover:bg-primary-50 text-lg px-8 py-6 rounded-full font-medium shadow-lg flex items-center gap-2"
                   color="primary"
                   variant="solid"
                 >

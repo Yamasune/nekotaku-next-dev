@@ -43,7 +43,7 @@ export const KunNavigationBreadcrumb = () => {
   return (
     <>
       {!hideBreadcrumbRoutes.includes(pathname) && (
-        <div className="w-full my-4 bg-background/60 backdrop-blur-lg">
+        <div className="w-full my-2 bg-background">
           <div className="px-3 mx-auto sm:px-6 max-w-7xl">
             <Breadcrumbs
               underline="hover"

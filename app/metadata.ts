@@ -8,7 +8,7 @@ export const kunViewport: Viewport = {
   maximumScale: 1,
   userScalable: false,
   themeColor: [
-    { media: '(prefers-color-scheme: light)', color: '#ffffff' },
+    { media: '(prefers-color-scheme: light)', color: '#f7f9fe' },
     { media: '(prefers-color-scheme: dark)', color: '#000000' }
   ],
   colorScheme: 'light dark'
