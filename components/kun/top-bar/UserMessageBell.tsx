@@ -27,7 +27,6 @@ export const UserMessageBell = ({
 
   return (
     <Tooltip
-      disableAnimation
       showArrow
       closeDelay={0}
       content={hasUnreadMessages ? '您有新消息!' : '我的消息'}
