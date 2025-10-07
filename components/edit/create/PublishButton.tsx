@@ -70,11 +70,13 @@ export const PublishButton = ({ setErrors }: Props) => {
         uniqueId: string
       }>
     >('/edit', formDataToSend)
+
     kunErrorHandler(res, async (value) => {
       resetData()
       await localforage.removeItem('kun-patch-banner')
       router.push(`/${value.uniqueId}`)
     })
+
     toast.success('发布完成, 正在为您跳转到资源介绍页面')
     setCreating(false)
   }
