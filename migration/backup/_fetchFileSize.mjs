@@ -30,7 +30,7 @@ const extractLinks = (fileContent) => {
 
 const fetchLinkData = async (link) => {
   const key = link.split('/').pop()
-  const apiUrl = `https://pan.touchgal.net/api/v3/share/info/${key}`
+  const apiUrl = `https://www.nullcloud.top/api/v3/share/info/${key}`
   try {
     const response = await fetch(apiUrl)
     if (!response.ok) {
@@ -45,7 +45,7 @@ const fetchLinkData = async (link) => {
 }
 
 const fetchListData = async (key) => {
-  const apiUrl = `https://pan.touchgal.net/api/v3/share/list/${key}`
+  const apiUrl = `https://www.nullcloud.top/api/v3/share/list/${key}`
   try {
     const response = await fetch(apiUrl)
     if (!response.ok) {

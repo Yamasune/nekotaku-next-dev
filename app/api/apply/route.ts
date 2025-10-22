@@ -18,8 +18,8 @@ export const applyForCreator = async (uid: number) => {
     return '未找到该用户'
   }
 
-  if (user._count.patch_resource < 3) {
-    return '您暂时不可以申请成为创作者, 您可以继续发布补丁'
+  if (user._count.patch_resource < 9999) {
+    return '本站暂未开放创作者申请功能'
   }
 
   if (user.role > 1) {

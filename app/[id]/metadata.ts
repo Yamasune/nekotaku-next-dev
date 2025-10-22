@@ -9,11 +9,11 @@ const getPlatformDescription = (platform: string[]) => {
   const hasAndroid = platform.includes('android')
 
   if (hasWindows && hasAndroid) {
-    return 'PC + 安卓'
+    return 'Windows & Android 游戏'
   } else if (hasWindows) {
-    return 'PC 游戏'
+    return 'Windows 游戏'
   } else if (hasAndroid) {
-    return '安卓游戏'
+    return 'Android 游戏'
   } else {
     return ''
   }
